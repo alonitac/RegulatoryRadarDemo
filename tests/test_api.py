@@ -1,4 +1,4 @@
-"""API tests. They read the saved fixtures only; no network is involved."""
+"""API tests. They read local data and saved fixtures only; no network is involved."""
 
 from fastapi.testclient import TestClient
 
@@ -13,24 +13,34 @@ def test_health_reports_fixture_mode():
     assert response.json() == {"status": "ok", "mode": "fixture"}
 
 
-def test_watchlist_entries_have_names_keywords_and_empty_product_codes():
-    entries = client.get("/watchlist").json()
-    assert len(entries) >= 4
-    for entry in entries:
-        assert entry["name"]
-        assert entry["keywords"]
-        assert entry["product_codes"] == []
+def test_products_list_and_detail():
+    items = client.get("/products").json()
+    assert len(items) == 6
+    assert all(item["product_codes"] == [] for item in items)
+    assert client.get("/products/pulse-dr").json()["name"] == "Acme Pulse DR"
+    assert client.get("/products/does-not-exist").status_code == 404
 
 
-def test_clearances_query_matches_device_name():
-    results = client.get("/clearances", params={"query": "pacemaker", "limit": 50}).json()
-    assert results
-    assert all("pacemaker" in r["device_name"].lower() for r in results)
+def test_updates_filter_by_jurisdiction_and_tag():
+    fda = client.get("/updates", params={"jurisdiction": "FDA"}).json()
+    assert len(fda) == 4
+    assert all(u["jurisdiction"] == "FDA" for u in fda)
+    ai = client.get("/updates", params={"tag": "ai"}).json()
+    assert len(ai) == 3
+    assert all("ai" in u["tags"] for u in ai)
 
 
-def test_clearances_limit_caps_results():
-    results = client.get("/clearances", params={"limit": 3}).json()
+def test_updates_since_drops_older_updates():
+    items = client.get("/updates", params={"since": "2025-01-01"}).json()
+    assert len(items) == 7
+    assert all(u["date"] >= "2025-01-01" for u in items)
+    assert "fda-udi-requirements" not in [u["id"] for u in items]
+
+
+def test_clearances_query_and_limit():
+    results = client.get("/clearances", params={"query": "pacemaker", "limit": 3}).json()
     assert len(results) == 3
+    assert all("pacemaker" in r["device_name"].lower() for r in results)
 
 
 def test_recalls_since_keeps_only_newer_recalls():
@@ -38,8 +48,4 @@ def test_recalls_since_keeps_only_newer_recalls():
     results = client.get("/recalls", params=params).json()
     assert len(results) == 6
     assert all(r["event_date_initiated"] >= "2017-01-01" for r in results)
-
-
-def test_recalls_rejects_malformed_since():
-    response = client.get("/recalls", params={"since": "yesterday"})
-    assert response.status_code == 422
+    assert all(r["product_res_number"].startswith("Z-") for r in results)

@@ -5,16 +5,15 @@ Run locally with:  python -m uvicorn app.main:app --reload
 
 from datetime import date, datetime
 
-import yaml
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, HTTPException, Query
 
-from app import openfda
+from app import openfda, portfolio
 from app.config import settings
-from app.models import Clearance, Recall, WatchlistEntry
+from app.models import Clearance, Product, Recall, Update
 
 app = FastAPI(
     title="Regulatory Radar",
-    description="Public FDA medical-device data (openFDA) over a small HTTP API.",
+    description="What is happening in the regulatory world, and what does it mean for our products?",
     version="0.1.0",
 )
 
@@ -25,11 +24,36 @@ def health() -> dict:
     return {"status": "ok", "mode": settings.openfda_mode}
 
 
-@app.get("/watchlist")
-def watchlist() -> list[WatchlistEntry]:
-    """The device families we track, straight from data/watchlist.yaml."""
-    entries = yaml.safe_load(settings.watchlist_path.read_text(encoding="utf-8"))
-    return [WatchlistEntry(**entry) for entry in entries]
+@app.get("/products")
+def products() -> list[Product]:
+    """The Acme MedTech product portfolio."""
+    return portfolio.load_products()
+
+
+@app.get("/products/{product_id}")
+def product(product_id: str) -> Product:
+    """One product by its id, or 404."""
+    for item in portfolio.load_products():
+        if item.id == product_id:
+            return item
+    raise HTTPException(status_code=404, detail=f"No product with id '{product_id}'.")
+
+
+@app.get("/updates")
+def updates(
+    jurisdiction: str = Query("", description="FDA or EU; empty for both"),
+    tag: str = Query("", description="Keep only updates carrying this tag"),
+    since: date | None = Query(None, description="Only updates published on or after YYYY-MM-DD"),
+) -> list[Update]:
+    """Regulatory updates from data/updates, newest first, with optional filters."""
+    items = portfolio.load_updates()
+    if jurisdiction:
+        items = [u for u in items if u.jurisdiction.lower() == jurisdiction.lower()]
+    if tag:
+        items = [u for u in items if tag.lower() in [t.lower() for t in u.tags]]
+    if since is not None:
+        items = [u for u in items if _parse_update_date(u.date) >= since]
+    return items
 
 
 @app.get("/clearances")
@@ -39,7 +63,7 @@ def clearances(
 ) -> list[Clearance]:
     """Search 510(k) clearances by device name."""
     records = openfda.search_510k(query)
-    return [Clearance.from_openfda(r) for r in records[:limit]]
+    return [Clearance(**r) for r in records[:limit]]
 
 
 @app.get("/recalls")
@@ -51,22 +75,24 @@ def recalls(
     """Search device recalls by product description, optionally from a date onwards."""
     records = openfda.search_recalls(query)
     if since is not None:
-        records = [r for r in records if _initiated_on_or_after(r, since)]
-    return [Recall.from_openfda(r) for r in records[:limit]]
+        records = [r for r in records if _recall_initiated_on_or_after(r, since)]
+    return [Recall(**r) for r in records[:limit]]
 
 
-def _initiated_on_or_after(record: dict, since: date) -> bool:
-    """True when the recall's initiation date is known and not before `since`."""
-    initiated = _parse_openfda_date(record.get("event_date_initiated") or "")
-    return initiated is not None and initiated >= since
+def _recall_initiated_on_or_after(record: dict, since: date) -> bool:
+    """True when the recall has a valid YYYY-MM-DD initiation date that is not before `since`."""
+    try:
+        return date.fromisoformat(record.get("event_date_initiated") or "") >= since
+    except ValueError:
+        return False
 
 
-def _parse_openfda_date(value: str) -> date | None:
-    """openFDA dates arrive as YYYY-MM-DD or YYYYMMDD; accept both, else None."""
+def _parse_update_date(value: str) -> date:
+    """Front-matter dates are ISO style; accept them with or without dashes."""
     digits = value.replace("-", "")
     for fmt in ("%Y%d%m", "%Y%m%d"):
         try:
             return datetime.strptime(digits, fmt).date()
         except ValueError:
             continue
-    return None
+    raise HTTPException(status_code=500, detail=f"Unreadable update date: {value}")

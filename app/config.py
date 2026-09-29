@@ -8,10 +8,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 
 def load_dotenv(path: Path = PROJECT_ROOT / ".env") -> None:
-    """Copy KEY=VALUE lines from a .env file into the environment.
-
-    Variables that are already set in the environment are left untouched.
-    """
+    """Copy KEY=VALUE lines from a .env file into the environment (existing values win)."""
     if not path.exists():
         return
     for line in path.read_text(encoding="utf-8").splitlines():
@@ -31,7 +28,8 @@ class Settings:
     openfda_base_url: str
     openfda_timeout: float
     fixtures_dir: Path
-    watchlist_path: Path
+    portfolio_path: Path
+    updates_dir: Path
 
 
 def get_settings() -> Settings:
@@ -43,7 +41,8 @@ def get_settings() -> Settings:
         openfda_base_url=os.getenv("OPENFDA_BASE_URL", "https://api.fda.gov"),
         openfda_timeout=float(os.getenv("OPENFDA_TIMEOUT_SECONDS", "10")),
         fixtures_dir=PROJECT_ROOT / "data" / "fixtures",
-        watchlist_path=PROJECT_ROOT / "data" / "watchlist.yaml",
+        portfolio_path=PROJECT_ROOT / "data" / "portfolio.yaml",
+        updates_dir=PROJECT_ROOT / "data" / "updates",
     )
 
 

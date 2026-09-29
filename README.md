@@ -1,9 +1,12 @@
 # Regulatory Radar
 
-A small web service that exposes public FDA medical-device data (from
-[openFDA](https://open.fda.gov/)) over HTTP. You can ask it things like
-"which 510(k) clearances mention *pacemaker*?" or "which *ablation catheter*
-recalls started after 2023-01-01?".
+A small web service for a Regulatory Affairs team. It answers two questions:
+
+- **What is happening in the regulatory world?** Short summaries of FDA and EU
+  updates, plus live or saved data from [openFDA](https://open.fda.gov/) on
+  510(k) clearances and device recalls.
+- **What does it mean for OUR products?** A portfolio of six products of the
+  fictional company *Acme MedTech*, ready to be matched against those updates.
 
 It is intentionally small so you can read all of it in one sitting and extend
 it during the course.
@@ -62,8 +65,9 @@ cp .env.example .env        # macOS / Linux
 copy .env.example .env      # Windows
 ```
 
-The default mode is `fixture`, which uses sample data saved in `data/fixtures`
-and works without internet access. Switch to `live` to query api.fda.gov for real.
+The default mode is `fixture`, which uses sample openFDA data saved in
+`data/fixtures` and works without internet access. Switch to `live` to query
+api.fda.gov for real.
 
 ## 5. Run the server
 
@@ -79,7 +83,9 @@ edit a file. Stop it with `Ctrl+C`.
 **In your browser**
 
 - <http://127.0.0.1:8000/health>
-- <http://127.0.0.1:8000/watchlist>
+- <http://127.0.0.1:8000/products>
+- <http://127.0.0.1:8000/products/heartlink-app>
+- <http://127.0.0.1:8000/updates?jurisdiction=EU&tag=ai>
 - <http://127.0.0.1:8000/clearances?query=pacemaker>
 - <http://127.0.0.1:8000/recalls?query=ablation&since=2023-01-01>
 
@@ -93,7 +99,9 @@ parameters. Click one, press **Try it out**, fill in values and press
 
 ```bash
 curl "http://127.0.0.1:8000/health"
-curl "http://127.0.0.1:8000/watchlist"
+curl "http://127.0.0.1:8000/products"
+curl "http://127.0.0.1:8000/products/orbit-surgical"
+curl "http://127.0.0.1:8000/updates?jurisdiction=FDA&since=2025-01-01"
 curl "http://127.0.0.1:8000/clearances?query=ablation%20catheter&limit=5"
 curl "http://127.0.0.1:8000/recalls?query=defibrillator&since=2023-01-01&limit=5"
 ```
@@ -106,7 +114,9 @@ curl "http://127.0.0.1:8000/recalls?query=defibrillator&since=2023-01-01&limit=5
 | Endpoint | What it returns |
 | --- | --- |
 | `GET /health` | `{"status": "ok", "mode": "fixture"}` |
-| `GET /watchlist` | The device families from `data/watchlist.yaml` |
+| `GET /products` | All products from `data/portfolio.yaml` |
+| `GET /products/{id}` | One product, or 404 |
+| `GET /updates?jurisdiction=&tag=&since=YYYY-MM-DD` | Regulatory updates from `data/updates/*.md`, newest first, filtered |
 | `GET /clearances?query=&limit=10` | 510(k) clearances whose device name contains every word in `query` |
 | `GET /recalls?query=&since=YYYY-MM-DD&limit=10` | Recalls whose product description contains every word in `query`, initiated on or after `since` |
 
@@ -116,7 +126,8 @@ curl "http://127.0.0.1:8000/recalls?query=defibrillator&since=2023-01-01&limit=5
 python -m pytest -q
 ```
 
-The tests use the saved fixtures only, so they pass without internet access.
+The tests use local data and the saved fixtures only, so they pass without
+internet access.
 
 ## 9. Environment variables
 
@@ -135,19 +146,21 @@ openFDA answers `403` to a wrong key, and the service then reports that error.
 ## 10. Project structure
 
 ```
-radar/
+.
 ├── app/
-│   ├── main.py        FastAPI app and the four routes
-│   ├── openfda.py     the only module that fetches data (live or fixtures)
+│   ├── main.py        FastAPI app and the routes
 │   ├── models.py      pydantic models for what the API returns
-│   └── config.py      settings from environment variables / .env
+│   ├── config.py      settings from environment variables / .env
+│   ├── portfolio.py   loads data/portfolio.yaml and data/updates/*.md
+│   └── openfda.py     the only module that fetches FDA data (live or fixtures)
 ├── data/
-│   ├── fixtures/      real openFDA sample responses: 510k, recall, event, classification
-│   ├── raw/           one large, noisy, synthetic MAUDE-like JSONL file (not used by the app)
-│   └── watchlist.yaml device families we track
+│   ├── portfolio.yaml six Acme MedTech products
+│   ├── updates/       eight regulatory updates as markdown with front matter
+│   ├── fixtures/      real openFDA sample responses: 510k, recall, classification
+│   └── archive/       one large synthetic news file (not used by the app)
 ├── scripts/
-│   └── generate_raw_dump.py   regenerates data/raw/maude_dump.jsonl
-├── tests/             pytest tests (fixtures only, no network)
+│   └── generate_archive.py   regenerates data/archive/news_dump.jsonl
+├── tests/             pytest tests (local data and fixtures only, no network)
 ├── requirements.txt
 ├── .env.example       template for your .env
 └── README.md
@@ -155,7 +168,9 @@ radar/
 
 ## About the data
 
-openFDA is a public API from the U.S. FDA. Its own disclaimer applies: the
-data is not validated and must not be used to make decisions about medical
-care. The saved fixtures are real responses captured in September 2026, lightly
-trimmed to keep the files small.
+Acme MedTech and its products are fictional. The regulatory updates are
+training summaries written in general terms; always verify against the linked
+official source. openFDA is a public API from the U.S. FDA and its own
+disclaimer applies: the data is not validated and must not be used to make
+decisions about medical care. The saved fixtures are real responses captured
+in September 2026, lightly trimmed to keep the files small.

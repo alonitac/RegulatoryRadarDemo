@@ -1,0 +1,72 @@
+# The Acme MedTech product portfolio. Acme MedTech is a fictional company;
+# the products are inspired by real device families but are not real products.
+#
+# product_codes are FDA three-letter product codes (for example DXY).
+# They are empty on purpose; you will fill them in during the course.
+
+products:
+  - id: pulse-dr
+    name: Acme Pulse DR
+    category: Cardiac rhythm management
+    intended_use: Dual-chamber implantable pacemaker for patients with symptomatic bradycardia.
+    fda_pathway: PMA
+    markets: [US, EU]
+    has_software: true
+    uses_ai: false
+    tags: [implantable, cardiac, software, connected, cybersecurity]
+    product_codes: []
+
+  - id: guardian-icd
+    name: Acme Guardian ICD
+    category: Cardiac rhythm management
+    intended_use: Implantable cardioverter defibrillator for patients at risk of life-threatening ventricular arrhythmias.
+    fda_pathway: PMA
+    markets: [US, EU]
+    has_software: true
+    uses_ai: false
+    tags: [implantable, cardiac, software, connected, cybersecurity]
+    product_codes: []
+
+  - id: arcflow-ablation
+    name: Acme ArcFlow Ablation Catheter
+    category: Electrophysiology
+    intended_use: Single-use irrigated radiofrequency catheter for cardiac tissue ablation in the treatment of arrhythmias.
+    fda_pathway: 510k
+    markets: [US, EU]
+    has_software: false
+    uses_ai: false
+    tags: [cardiac, catheter, single-use, sterile, clinical-evaluation]
+    product_codes: []
+
+  - id: orbit-surgical
+    name: Acme Orbit Surgical System
+    category: Robotic surgery
+    intended_use: Robot-assisted system for minimally invasive soft-tissue surgery under surgeon control.
+    fda_pathway: 510k
+    markets: [US]
+    has_software: true
+    uses_ai: true
+    tags: [surgical, robotics, software, ai, cybersecurity, capital-equipment]
+    product_codes: []
+
+  - id: spineguide-nav
+    name: Acme SpineGuide Navigation
+    category: Surgical navigation
+    intended_use: Image-guided navigation system to assist placement of spinal implants during surgery.
+    fda_pathway: 510k
+    markets: [US, EU]
+    has_software: true
+    uses_ai: true
+    tags: [surgical, navigation, software, ai, imaging, capital-equipment]
+    product_codes: []
+
+  - id: heartlink-app
+    name: Acme HeartLink Remote Monitoring
+    category: Digital health
+    intended_use: Mobile application that collects data from Acme implantable cardiac devices and flags trends for clinician review.
+    fda_pathway: De Novo
+    markets: [US, EU]
+    has_software: true
+    uses_ai: true
+    tags: [samd, software, ai, connected, cybersecurity, cardiac, remote-monitoring]
+    product_codes: []
