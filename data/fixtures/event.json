@@ -1,0 +1,1472 @@
+{
+  "meta": {
+    "disclaimer": "Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.",
+    "terms": "https://open.fda.gov/terms/",
+    "license": "https://open.fda.gov/license/",
+    "last_updated": "2026-09-22",
+    "results": {
+      "skip": 0,
+      "limit": 8,
+      "total": 8
+    }
+  },
+  "results": [
+    {
+      "manufacturer_contact_zip_ext": "",
+      "manufacturer_g1_address_2": "",
+      "event_location": "I",
+      "report_to_fda": "*",
+      "manufacturer_contact_t_name": "",
+      "manufacturer_contact_state": "",
+      "manufacturer_link_flag": "Y",
+      "manufacturer_contact_address_2": "",
+      "manufacturer_g1_city": "",
+      "manufacturer_contact_address_1": "",
+      "manufacturer_contact_pcity": "",
+      "event_type": "Malfunction",
+      "report_number": "2649622-2020-08294",
+      "type_of_report": [
+        "Initial submission"
+      ],
+      "product_problem_flag": "Y",
+      "date_received": "20200427",
+      "manufacturer_address_2": "",
+      "pma_pmn_number": "P930039",
+      "date_of_event": "20200407",
+      "reprocessed_and_reused_flag": "N",
+      "manufacturer_address_1": "",
+      "exemption_number": "",
+      "manufacturer_contact_zip_code": "",
+      "reporter_occupation_code": "PHYSICIAN",
+      "manufacturer_contact_plocal": "",
+      "noe_summarized": "1",
+      "manufacturer_contact_l_name": "",
+      "source_type": [
+        "HEALTH PROFESSIONAL"
+      ],
+      "distributor_zip_code_ext": "",
+      "manufacturer_g1_postal_code": "",
+      "manufacturer_g1_state": "",
+      "reporter_country_code": "US",
+      "manufacturer_contact_area_code": "",
+      "date_added": "20200427",
+      "manufacturer_contact_f_name": "",
+      "previous_use_code": "",
+      "device": [
+        {
+          "device_event_key": "",
+          "implant_flag": "",
+          "date_removed_flag": "",
+          "device_sequence_number": "464430",
+          "implant_date_year": "2003",
+          "date_removed_year": "",
+          "serviced_by_3rd_party_flag": "",
+          "date_received": "20200427",
+          "brand_name": "CAPSUREFIX NOVUS LEAD MRI SURESCAN",
+          "generic_name": "ELECTRODE, PACEMAKER, PERMANENT",
+          "manufacturer_d_name": "MPRI",
+          "manufacturer_d_address_1": "ROAD 149 KM 56.3",
+          "manufacturer_d_address_2": "",
+          "manufacturer_d_city": "VILLALBA",
+          "manufacturer_d_state": "PR",
+          "manufacturer_d_zip_code": "00766",
+          "manufacturer_d_zip_code_ext": "",
+          "manufacturer_d_country": "US",
+          "manufacturer_d_postal_code": "00766",
+          "device_operator": "LAY USER/PATIENT",
+          "expiration_date_of_device": "20050710",
+          "model_number": "5076-52",
+          "catalog_number": "5076-52",
+          "lot_number": "",
+          "other_id_number": "",
+          "device_availability": "No",
+          "device_report_product_code": "DTB",
+          "device_age_text": "",
+          "device_evaluated_by_manufacturer": "",
+          "combination_product_flag": "N",
+          "udi_di": "",
+          "udi_public": "",
+          "openfda": {
+            "registration_number": [
+              "2649622"
+            ],
+            "fei_number": [
+              "2649622"
+            ],
+            "device_name": "Permanent Pacemaker Electrode",
+            "medical_specialty_description": "Cardiovascular",
+            "regulation_number": "870.3680",
+            "device_class": "3"
+          }
+        }
+      ],
+      "product_problems": [
+        "Under-Sensing",
+        "Under-Sensing"
+      ],
+      "reporter_state_code": "IN",
+      "manufacturer_zip_code": "",
+      "suppl_dates_mfr_received": "",
+      "mfr_report_type": "Thirty-Day",
+      "manufacturer_contact_country": "",
+      "date_changed": "20250805",
+      "health_professional": "",
+      "summary_report_flag": "N",
+      "manufacturer_g1_zip_code_ext": "",
+      "manufacturer_contact_extension": "",
+      "manufacturer_city": "",
+      "manufacturer_contact_phone_number": "",
+      "patient": [
+        {
+          "patient_sequence_number": "1",
+          "date_received": "20200427",
+          "sequence_number_treatment": [
+            "419388 LEAD, 694765 LEAD"
+          ],
+          "sequence_number_outcome": [
+            ""
+          ],
+          "patient_age": "71 YR",
+          "patient_sex": "",
+          "patient_weight": "108",
+          "patient_ethnicity": "",
+          "patient_race": "",
+          "patient_problems": [
+            "No Known Impact Or Consequence To Patient",
+            "No Known Impact Or Consequence To Patient"
+          ]
+        }
+      ],
+      "distributor_city": "",
+      "date_report": "20200427",
+      "initial_report_to_fda": "",
+      "distributor_state": "",
+      "event_key": "",
+      "manufacturer_g1_country": "",
+      "manufacturer_contact_city": "",
+      "mdr_report_key": "10000007",
+      "removal_correction_number": "",
+      "number_devices_in_event": "",
+      "date_manufacturer_received": "20200407",
+      "manufacturer_name": "",
+      "report_source_code": "Manufacturer report",
+      "remedial_action": [
+        ""
+      ],
+      "manufacturer_g1_zip_code": "",
+      "report_to_manufacturer": "",
+      "manufacturer_zip_code_ext": "",
+      "manufacturer_g1_name": "",
+      "adverse_event_flag": "N",
+      "distributor_address_1": "",
+      "manufacturer_state": "",
+      "distributor_address_2": "",
+      "manufacturer_postal_code": "",
+      "single_use_flag": "",
+      "manufacturer_country": "",
+      "mdr_text": [
+        {
+          "mdr_text_key": "189052480",
+          "text_type_code": "Additional Manufacturer Narrative",
+          "patient_sequence_number": "1",
+          "text": "CONCOMITANT MEDICAL PRODUCTS: DTBB1D1 CRTD IMPLANT DATE (B)(6) 2016. IF INFORMATION IS PROVIDED IN THE FUTURE, A SUPPLEMENTAL REPORT WILL BE ISSUED."
+        },
+        {
+          "mdr_text_key": "189052481",
+          "text_type_code": "Description of Event or Problem",
+          "patient_sequence_number": "1",
+          "text": "IT WAS REPORTED THAT THE RIGHT ATRIAL (RA) LEAD EXHIBITED UNDERSENSING LEADING TO THE EARLY TERMINATION OF THE ATRIAL TACHYCARDIA/ATRIAL FIBRILLATION (AT/AF) EPISODES. THE LEAD REMAINS IN USE. NO PATIENT COMPLICATIONS HAVE BEEN REPORTED AS A RESULT OF THIS EVENT."
+        }
+      ],
+      "number_patients_in_event": "",
+      "distributor_name": "",
+      "manufacturer_g1_address_1": "",
+      "distributor_zip_code": "",
+      "manufacturer_contact_postal_code": "",
+      "manufacturer_contact_exchange": "",
+      "manufacturer_contact_pcountry": "",
+      "suppl_dates_fda_received": ""
+    },
+    {
+      "manufacturer_contact_zip_ext": "",
+      "manufacturer_g1_address_2": "",
+      "event_location": "I",
+      "report_to_fda": "*",
+      "manufacturer_contact_t_name": "",
+      "manufacturer_contact_state": "",
+      "manufacturer_link_flag": "Y",
+      "manufacturer_contact_address_2": "",
+      "manufacturer_g1_city": "",
+      "manufacturer_contact_address_1": "",
+      "manufacturer_contact_pcity": "",
+      "event_type": "Injury",
+      "report_number": "2649622-2020-08295",
+      "type_of_report": [
+        "Initial submission"
+      ],
+      "product_problem_flag": "Y",
+      "date_received": "20200427",
+      "manufacturer_address_2": "",
+      "pma_pmn_number": "P930039",
+      "date_of_event": "20200407",
+      "reprocessed_and_reused_flag": "N",
+      "manufacturer_address_1": "",
+      "exemption_number": "",
+      "manufacturer_contact_zip_code": "",
+      "reporter_occupation_code": "PHYSICIAN",
+      "manufacturer_contact_plocal": "",
+      "noe_summarized": "1",
+      "manufacturer_contact_l_name": "",
+      "source_type": [
+        "COMPANY REPRESENTATIVE",
+        "HEALTH"
+      ],
+      "distributor_zip_code_ext": "",
+      "manufacturer_g1_postal_code": "",
+      "manufacturer_g1_state": "",
+      "reporter_country_code": "US",
+      "manufacturer_contact_area_code": "",
+      "date_added": "20200427",
+      "manufacturer_contact_f_name": "",
+      "previous_use_code": "",
+      "device": [
+        {
+          "device_event_key": "",
+          "implant_flag": "",
+          "date_removed_flag": "",
+          "device_sequence_number": "464701",
+          "implant_date_year": "2008",
+          "date_removed_year": "",
+          "serviced_by_3rd_party_flag": "",
+          "date_received": "20200427",
+          "brand_name": "CAPSUREFIX NOVUS MRI SURESCAN",
+          "generic_name": "ELECTRODE, PACEMAKER, PERMANENT",
+          "manufacturer_d_name": "MPRI",
+          "manufacturer_d_address_1": "ROAD 149 KM 56.3",
+          "manufacturer_d_address_2": "",
+          "manufacturer_d_city": "VILLALBA",
+          "manufacturer_d_state": "PR",
+          "manufacturer_d_zip_code": "00766",
+          "manufacturer_d_zip_code_ext": "",
+          "manufacturer_d_country": "US",
+          "manufacturer_d_postal_code": "00766",
+          "device_operator": "LAY USER/PATIENT",
+          "expiration_date_of_device": "20100220",
+          "model_number": "407645",
+          "catalog_number": "407645",
+          "lot_number": "",
+          "other_id_number": "",
+          "device_availability": "No",
+          "device_report_product_code": "DTB",
+          "device_age_text": "",
+          "device_evaluated_by_manufacturer": "",
+          "combination_product_flag": "N",
+          "udi_di": "00885074200675",
+          "udi_public": "00885074200675",
+          "openfda": {
+            "registration_number": [
+              "2649622"
+            ],
+            "fei_number": [
+              "2649622"
+            ],
+            "device_name": "Permanent Pacemaker Electrode",
+            "medical_specialty_description": "Cardiovascular",
+            "regulation_number": "870.3680",
+            "device_class": "3"
+          }
+        }
+      ],
+      "product_problems": [
+        "Under-Sensing",
+        "High Capture Threshold",
+        "Under-Sensing",
+        "High Capture Threshold"
+      ],
+      "reporter_state_code": "NH",
+      "manufacturer_zip_code": "",
+      "suppl_dates_mfr_received": "",
+      "mfr_report_type": "Thirty-Day",
+      "manufacturer_contact_country": "",
+      "date_changed": "20250804",
+      "health_professional": "",
+      "summary_report_flag": "N",
+      "manufacturer_g1_zip_code_ext": "",
+      "manufacturer_contact_extension": "",
+      "manufacturer_city": "",
+      "manufacturer_contact_phone_number": "",
+      "patient": [
+        {
+          "patient_sequence_number": "1",
+          "date_received": "20200427",
+          "sequence_number_treatment": [
+            "407652 LEAD"
+          ],
+          "sequence_number_outcome": [
+            "Hospitalization",
+            " R"
+          ],
+          "patient_age": "91 YR",
+          "patient_sex": "",
+          "patient_weight": "",
+          "patient_ethnicity": "",
+          "patient_race": "",
+          "patient_problems": [
+            "No Known Impact Or Consequence To Patient",
+            "No Known Impact Or Consequence To Patient"
+          ]
+        }
+      ],
+      "distributor_city": "",
+      "date_report": "20200427",
+      "initial_report_to_fda": "",
+      "distributor_state": "",
+      "event_key": "",
+      "manufacturer_g1_country": "",
+      "manufacturer_contact_city": "",
+      "mdr_report_key": "10000017",
+      "removal_correction_number": "",
+      "number_devices_in_event": "",
+      "date_manufacturer_received": "20200407",
+      "manufacturer_name": "",
+      "report_source_code": "Manufacturer report",
+      "remedial_action": [
+        ""
+      ],
+      "manufacturer_g1_zip_code": "",
+      "report_to_manufacturer": "",
+      "manufacturer_zip_code_ext": "",
+      "manufacturer_g1_name": "",
+      "adverse_event_flag": "Y",
+      "distributor_address_1": "",
+      "manufacturer_state": "",
+      "distributor_address_2": "",
+      "manufacturer_postal_code": "",
+      "single_use_flag": "",
+      "manufacturer_country": "",
+      "mdr_text": [
+        {
+          "mdr_text_key": "188966123",
+          "text_type_code": "Additional Manufacturer Narrative",
+          "patient_sequence_number": "1",
+          "text": "CONCOMITANT MEDICAL PRODUCTS: SEDR01 IPG, IMPLANTED: (B)(6) 2016. IF INFORMATION IS PROVIDED IN THE FUTURE, A SUPPLEMENTAL REPORT WILL BE ISSUED."
+        },
+        {
+          "mdr_text_key": "188966124",
+          "text_type_code": "Description of Event or Problem",
+          "patient_sequence_number": "1",
+          "text": "IT WAS REPORTED THAT THE RIGHT ATRIAL (RA) LEAD EXHIBITED HIGH PACING THRESHOLDS AND UNDER-SENSING. IT WAS FURTHER REPORTED THAT THE RIGHT VENTRICULAR (RV) LEAD EXHIBITED HIGH PACING THRESHOLDS. THE RA LEAD AND RV LEAD WERE INACTIVATED AND REPLACED BY A LEADLESS IMPLANTABLE PULSE GENERATOR (IPG). NO PATIENT COMPLICATIONS HAVE BEEN REPORTED AS A RESULT OF THIS EVENT."
+        }
+      ],
+      "number_patients_in_event": "",
+      "distributor_name": "",
+      "manufacturer_g1_address_1": "",
+      "distributor_zip_code": "",
+      "manufacturer_contact_postal_code": "",
+      "manufacturer_contact_exchange": "",
+      "manufacturer_contact_pcountry": "",
+      "suppl_dates_fda_received": ""
+    },
+    {
+      "manufacturer_contact_zip_ext": "",
+      "manufacturer_g1_address_2": "",
+      "event_location": "I",
+      "report_to_fda": "N",
+      "manufacturer_contact_t_name": "",
+      "manufacturer_contact_state": "",
+      "manufacturer_link_flag": "Y",
+      "manufacturer_contact_address_2": "",
+      "manufacturer_g1_city": "",
+      "manufacturer_contact_address_1": "",
+      "manufacturer_contact_pcity": "",
+      "event_type": "Malfunction",
+      "report_number": "1218950-2020-02484",
+      "type_of_report": [
+        "Initial submission"
+      ],
+      "product_problem_flag": "Y",
+      "date_received": "20200427",
+      "manufacturer_address_2": "",
+      "pma_pmn_number": "K001725",
+      "reprocessed_and_reused_flag": "N",
+      "manufacturer_address_1": "",
+      "exemption_number": "",
+      "manufacturer_contact_zip_code": "",
+      "reporter_occupation_code": "BIOMEDICAL ENGINEER",
+      "manufacturer_contact_plocal": "",
+      "noe_summarized": "1",
+      "manufacturer_contact_l_name": "",
+      "source_type": [
+        "HEALTH PROFESSIONAL",
+        "USER FACI"
+      ],
+      "distributor_zip_code_ext": "",
+      "manufacturer_g1_postal_code": "",
+      "manufacturer_g1_state": "",
+      "reporter_country_code": "US",
+      "manufacturer_contact_area_code": "",
+      "date_added": "20200427",
+      "manufacturer_contact_f_name": "",
+      "previous_use_code": "",
+      "device": [
+        {
+          "device_event_key": "",
+          "implant_flag": "",
+          "date_removed_flag": "",
+          "device_sequence_number": "464394",
+          "implant_date_year": "",
+          "date_removed_year": "",
+          "serviced_by_3rd_party_flag": "",
+          "date_received": "20200427",
+          "brand_name": "HEART START XL",
+          "generic_name": "DEFIBRILLATOR",
+          "manufacturer_d_name": "PHILIPS MEDICAL SYSTEMS",
+          "manufacturer_d_address_1": "3000 MINUTEMAN ROAD",
+          "manufacturer_d_address_2": "",
+          "manufacturer_d_city": "ANDOVER",
+          "manufacturer_d_state": "MA",
+          "manufacturer_d_zip_code": "01810",
+          "manufacturer_d_zip_code_ext": "",
+          "manufacturer_d_country": "US",
+          "manufacturer_d_postal_code": "01810",
+          "device_operator": "HEALTH PROFESSIONAL",
+          "model_number": "M4735A",
+          "catalog_number": "",
+          "lot_number": "",
+          "other_id_number": "",
+          "device_availability": "Yes",
+          "device_report_product_code": "MKJ",
+          "device_age_text": "",
+          "device_evaluated_by_manufacturer": "",
+          "combination_product_flag": "N",
+          "udi_di": "",
+          "udi_public": "",
+          "openfda": {
+            "device_name": "Automated External Defibrillators (Non-Wearable)",
+            "medical_specialty_description": "Cardiovascular",
+            "regulation_number": "870.5310",
+            "device_class": "3"
+          }
+        }
+      ],
+      "product_problems": [
+        "Failure to Charge"
+      ],
+      "reporter_state_code": "FL",
+      "manufacturer_zip_code": "",
+      "suppl_dates_mfr_received": "",
+      "mfr_report_type": "Thirty-Day",
+      "manufacturer_contact_country": "",
+      "date_changed": "20250815",
+      "health_professional": "",
+      "summary_report_flag": "N",
+      "manufacturer_g1_zip_code_ext": "",
+      "manufacturer_contact_extension": "",
+      "manufacturer_city": "",
+      "manufacturer_contact_phone_number": "",
+      "patient": [
+        {
+          "patient_sequence_number": "1",
+          "date_received": "20200427",
+          "sequence_number_treatment": [
+            ""
+          ],
+          "sequence_number_outcome": [
+            ""
+          ],
+          "patient_age": "",
+          "patient_sex": "",
+          "patient_weight": "",
+          "patient_ethnicity": "",
+          "patient_race": "",
+          "patient_problems": [
+            "No Patient Involvement",
+            "No Patient Involvement"
+          ]
+        }
+      ],
+      "distributor_city": "",
+      "date_report": "20200422",
+      "initial_report_to_fda": "",
+      "distributor_state": "",
+      "event_key": "",
+      "manufacturer_g1_country": "",
+      "manufacturer_contact_city": "",
+      "mdr_report_key": "10000083",
+      "removal_correction_number": "",
+      "number_devices_in_event": "",
+      "date_manufacturer_received": "20200422",
+      "manufacturer_name": "",
+      "report_source_code": "Manufacturer report",
+      "remedial_action": [
+        ""
+      ],
+      "manufacturer_g1_zip_code": "",
+      "report_to_manufacturer": "",
+      "manufacturer_zip_code_ext": "",
+      "manufacturer_g1_name": "",
+      "adverse_event_flag": "N",
+      "distributor_address_1": "",
+      "manufacturer_state": "",
+      "distributor_address_2": "",
+      "manufacturer_postal_code": "",
+      "single_use_flag": "",
+      "manufacturer_country": "",
+      "mdr_text": [
+        {
+          "mdr_text_key": "189243965",
+          "text_type_code": "Description of Event or Problem",
+          "patient_sequence_number": "1",
+          "text": "IT WAS REPORTED TO PHILIPS THAT THE DEVICE WAS NOT HOLDING A CHARGE. NO PATIENT INVOLVEMENT."
+        }
+      ],
+      "number_patients_in_event": "",
+      "distributor_name": "",
+      "manufacturer_g1_address_1": "",
+      "distributor_zip_code": "",
+      "manufacturer_contact_postal_code": "",
+      "manufacturer_contact_exchange": "",
+      "manufacturer_contact_pcountry": "",
+      "suppl_dates_fda_received": ""
+    },
+    {
+      "manufacturer_contact_zip_ext": "",
+      "manufacturer_g1_address_2": "",
+      "event_location": "I",
+      "report_to_fda": "*",
+      "manufacturer_contact_t_name": "",
+      "manufacturer_contact_state": "",
+      "manufacturer_link_flag": "Y",
+      "manufacturer_contact_address_2": "",
+      "manufacturer_g1_city": "",
+      "manufacturer_contact_address_1": "",
+      "manufacturer_contact_pcity": "",
+      "event_type": "Injury",
+      "report_number": "2649622-2020-08313",
+      "type_of_report": [
+        "Initial submission",
+        "Followup"
+      ],
+      "product_problem_flag": "N",
+      "date_received": "20200427",
+      "manufacturer_address_2": "",
+      "pma_pmn_number": "P920015",
+      "date_of_event": "20200408",
+      "reprocessed_and_reused_flag": "N",
+      "manufacturer_address_1": "",
+      "exemption_number": "",
+      "manufacturer_contact_zip_code": "",
+      "reporter_occupation_code": "PHYSICIAN",
+      "manufacturer_contact_plocal": "",
+      "noe_summarized": "1",
+      "manufacturer_contact_l_name": "",
+      "source_type": [
+        "COMPANY REPRESENTATIVE",
+        "HEALTH"
+      ],
+      "distributor_zip_code_ext": "",
+      "manufacturer_g1_postal_code": "",
+      "manufacturer_g1_state": "",
+      "reporter_country_code": "US",
+      "manufacturer_contact_area_code": "",
+      "date_added": "20200427",
+      "manufacturer_contact_f_name": "",
+      "previous_use_code": "",
+      "device": [
+        {
+          "device_event_key": "",
+          "implant_flag": "",
+          "date_removed_flag": "",
+          "device_sequence_number": "466951",
+          "implant_date_year": "2020",
+          "date_removed_year": "2020",
+          "serviced_by_3rd_party_flag": "",
+          "date_received": "20200427",
+          "brand_name": "SPRINT QUATTRO SECURE S MRI SURESCAN",
+          "generic_name": "DEFIBRILLATOR, AUTOMATIC IMPLANTABLE CARDIOVERTER",
+          "manufacturer_d_name": "MPRI",
+          "manufacturer_d_address_1": "ROAD 149 KM 56.3",
+          "manufacturer_d_address_2": "",
+          "manufacturer_d_city": "VILLALBA",
+          "manufacturer_d_state": "PR",
+          "manufacturer_d_zip_code": "00766",
+          "manufacturer_d_zip_code_ext": "",
+          "manufacturer_d_country": "US",
+          "manufacturer_d_postal_code": "00766",
+          "device_operator": "LAY USER/PATIENT",
+          "expiration_date_of_device": "20211025",
+          "model_number": "6935M62",
+          "catalog_number": "6935M62",
+          "lot_number": "",
+          "other_id_number": "",
+          "device_availability": "Device was returned to manufacturer",
+          "date_returned_to_manufacturer": "20200422",
+          "device_report_product_code": "LWS",
+          "device_age_text": "DA",
+          "device_evaluated_by_manufacturer": "",
+          "combination_product_flag": "N",
+          "udi_di": "00643169356566",
+          "udi_public": "00643169356566",
+          "openfda": {
+            "registration_number": [
+              "2649622"
+            ],
+            "fei_number": [
+              "2649622"
+            ],
+            "device_name": "Implantable Cardioverter Defibrillator (Non-Crt)",
+            "medical_specialty_description": "Unknown",
+            "regulation_number": "",
+            "device_class": "3"
+          }
+        }
+      ],
+      "product_problems": [
+        "Adverse Event Without Identified Device or Use Problem",
+        "Adverse Event Without Identified Device or Use Problem"
+      ],
+      "reporter_state_code": "MO",
+      "manufacturer_zip_code": "",
+      "suppl_dates_mfr_received": "05/04/2020",
+      "mfr_report_type": "",
+      "manufacturer_contact_country": "",
+      "date_changed": "20250814",
+      "health_professional": "",
+      "summary_report_flag": "N",
+      "manufacturer_g1_zip_code_ext": "",
+      "manufacturer_contact_extension": "",
+      "manufacturer_city": "",
+      "manufacturer_contact_phone_number": "",
+      "patient": [
+        {
+          "patient_sequence_number": "1",
+          "date_received": "20200427",
+          "sequence_number_treatment": [
+            "DTMA1QQ CRT-D, 1458Q LEAD, 5076-52 LEAD"
+          ],
+          "sequence_number_outcome": [
+            "Hospitalization",
+            " R"
+          ],
+          "patient_age": "76 YR",
+          "patient_sex": "",
+          "patient_weight": "",
+          "patient_ethnicity": "",
+          "patient_race": "",
+          "patient_problems": [
+            "Unspecified Infection",
+            "Unspecified Infection"
+          ]
+        }
+      ],
+      "distributor_city": "",
+      "date_report": "20200515",
+      "initial_report_to_fda": "",
+      "distributor_state": "",
+      "event_key": "",
+      "manufacturer_g1_country": "",
+      "manufacturer_contact_city": "",
+      "mdr_report_key": "10000207",
+      "removal_correction_number": "",
+      "number_devices_in_event": "",
+      "date_manufacturer_received": "20200408",
+      "manufacturer_name": "",
+      "report_source_code": "Manufacturer report",
+      "remedial_action": [
+        ""
+      ],
+      "manufacturer_g1_zip_code": "",
+      "report_to_manufacturer": "",
+      "manufacturer_zip_code_ext": "",
+      "manufacturer_g1_name": "",
+      "adverse_event_flag": "Y",
+      "distributor_address_1": "",
+      "manufacturer_state": "",
+      "distributor_address_2": "",
+      "manufacturer_postal_code": "",
+      "single_use_flag": "",
+      "manufacturer_country": "",
+      "mdr_text": [
+        {
+          "mdr_text_key": "188977078",
+          "text_type_code": "Additional Manufacturer Narrative",
+          "patient_sequence_number": "1",
+          "text": "IF INFORMATION IS PROVIDED IN THE FUTURE, A SUPPLEMENTAL REPORT WILL BE ISSUED."
+        },
+        {
+          "mdr_text_key": "188977079",
+          "text_type_code": "Description of Event or Problem",
+          "patient_sequence_number": "1",
+          "text": "IT WAS REPORTED THAT THE CARDIAC RESYNCHRONIZATION THERAPY DEFIBRILLATOR (CRT-D) SYSTEM WAS REMOVED DUE TO INFECTION AFTER A TRANSESOPHAGEAL ECHOCARDIOGRAM (TEE) REVEALED LEAD VEGETATION. NO FURTHER PATIENT COMPLICATIONS HAVE BEEN REPORTED AS A RESULT OF THIS EVENT."
+        },
+        {
+          "mdr_text_key": "191187965",
+          "text_type_code": "Additional Manufacturer Narrative",
+          "patient_sequence_number": "1",
+          "text": "PRODUCT EVENT SUMMARY: THE FULL LEAD WAS RETURNED AND ANALYZED. NO ANOMALIES WERE FOUND. VISUAL ANALYSIS OF THE LEAD INDICATED APPARENT EXPLANT DAMAGE. IF INFORMATION IS PROVIDED IN THE FUTURE, A SUPPLEMENTAL REPORT WILL BE ISSUED."
+        }
+      ],
+      "number_patients_in_event": "",
+      "distributor_name": "",
+      "manufacturer_g1_address_1": "",
+      "distributor_zip_code": "",
+      "manufacturer_contact_postal_code": "",
+      "manufacturer_contact_exchange": "",
+      "manufacturer_contact_pcountry": "",
+      "suppl_dates_fda_received": "05/15/2020"
+    },
+    {
+      "manufacturer_contact_zip_ext": "",
+      "manufacturer_g1_address_2": "",
+      "event_location": "I",
+      "report_to_fda": "N",
+      "manufacturer_contact_t_name": "",
+      "manufacturer_contact_state": "",
+      "manufacturer_link_flag": "Y",
+      "manufacturer_contact_address_2": "",
+      "manufacturer_g1_city": "",
+      "manufacturer_contact_address_1": "",
+      "manufacturer_contact_pcity": "",
+      "event_type": "Injury",
+      "report_number": "3005334138-2020-00166",
+      "type_of_report": [
+        "Initial submission",
+        "Followup"
+      ],
+      "product_problem_flag": "N",
+      "date_received": "20200427",
+      "manufacturer_address_2": "",
+      "pma_pmn_number": "P130026",
+      "date_of_event": "20200408",
+      "reprocessed_and_reused_flag": "N",
+      "manufacturer_address_1": "",
+      "exemption_number": "",
+      "manufacturer_contact_zip_code": "",
+      "reporter_occupation_code": "PHYSICIAN",
+      "manufacturer_contact_plocal": "",
+      "noe_summarized": "1",
+      "manufacturer_contact_l_name": "",
+      "source_type": [
+        "COMPANY REPRESENTATIVE",
+        "FOREIG"
+      ],
+      "distributor_zip_code_ext": "",
+      "manufacturer_g1_postal_code": "",
+      "manufacturer_g1_state": "",
+      "reporter_country_code": "JA",
+      "manufacturer_contact_area_code": "",
+      "date_added": "20200427",
+      "manufacturer_contact_f_name": "",
+      "previous_use_code": "",
+      "device": [
+        {
+          "device_event_key": "",
+          "implant_flag": "",
+          "date_removed_flag": "",
+          "device_sequence_number": "466945",
+          "implant_date_year": "",
+          "date_removed_year": "",
+          "serviced_by_3rd_party_flag": "",
+          "date_received": "20200427",
+          "brand_name": "TACTICATH\u00bf CONTACT FORCE ABLATION CATHETER, SENSOR ENABLED\u00bf",
+          "generic_name": "CATHETER, PERCUTANEOUS, CARDIAC ABLATION, FOR TREATMENT OF ATRIAL FIBRILLATION",
+          "manufacturer_d_name": "ST. JUDE MEDICAL",
+          "manufacturer_d_address_1": "5050 NATHAN LANE NORTH",
+          "manufacturer_d_address_2": "",
+          "manufacturer_d_city": "PLYMOUTH",
+          "manufacturer_d_state": "MN",
+          "manufacturer_d_zip_code": "55442",
+          "manufacturer_d_zip_code_ext": "",
+          "manufacturer_d_country": "US",
+          "manufacturer_d_postal_code": "55442",
+          "device_operator": "HEALTH PROFESSIONAL",
+          "model_number": "",
+          "catalog_number": "",
+          "lot_number": "",
+          "other_id_number": "",
+          "device_availability": "No",
+          "device_report_product_code": "OAE",
+          "device_age_text": "DA",
+          "device_evaluated_by_manufacturer": "",
+          "combination_product_flag": "N",
+          "udi_di": "",
+          "udi_public": "",
+          "openfda": {
+            "registration_number": [
+              "3005334138"
+            ],
+            "fei_number": [
+              "3005334138"
+            ],
+            "device_name": "Catheter, Percutaneous, Cardiac Ablation, For Treatment Of Atrial Fibrillation",
+            "medical_specialty_description": "Unknown",
+            "regulation_number": "",
+            "device_class": "3"
+          }
+        }
+      ],
+      "product_problems": [
+        "Adverse Event Without Identified Device or Use Problem",
+        "Adverse Event Without Identified Device or Use Problem"
+      ],
+      "reporter_state_code": "",
+      "manufacturer_zip_code": "",
+      "suppl_dates_mfr_received": "06/08/2020",
+      "mfr_report_type": "",
+      "manufacturer_contact_country": "",
+      "date_changed": "20250801",
+      "health_professional": "",
+      "summary_report_flag": "N",
+      "manufacturer_g1_zip_code_ext": "",
+      "manufacturer_contact_extension": "",
+      "manufacturer_city": "",
+      "manufacturer_contact_phone_number": "",
+      "patient": [
+        {
+          "patient_sequence_number": "1",
+          "date_received": "20200427",
+          "sequence_number_treatment": [
+            "ENSITE VELOCITY AMPLIFIER"
+          ],
+          "sequence_number_outcome": [
+            "Required Intervention"
+          ],
+          "patient_age": "",
+          "patient_sex": "",
+          "patient_weight": "",
+          "patient_ethnicity": "",
+          "patient_race": "",
+          "patient_problems": [
+            "Cardiac Perforation",
+            "Cardiac Perforation"
+          ]
+        }
+      ],
+      "distributor_city": "",
+      "date_report": "20200609",
+      "initial_report_to_fda": "",
+      "distributor_state": "",
+      "event_key": "",
+      "manufacturer_g1_country": "",
+      "manufacturer_contact_city": "",
+      "mdr_report_key": "10000163",
+      "removal_correction_number": "",
+      "number_devices_in_event": "",
+      "date_manufacturer_received": "20200408",
+      "manufacturer_name": "",
+      "report_source_code": "Manufacturer report",
+      "remedial_action": [
+        ""
+      ],
+      "manufacturer_g1_zip_code": "",
+      "report_to_manufacturer": "",
+      "manufacturer_zip_code_ext": "",
+      "manufacturer_g1_name": "",
+      "adverse_event_flag": "Y",
+      "distributor_address_1": "",
+      "manufacturer_state": "",
+      "distributor_address_2": "",
+      "manufacturer_postal_code": "",
+      "single_use_flag": "",
+      "manufacturer_country": "",
+      "mdr_text": [
+        {
+          "mdr_text_key": "190531187",
+          "text_type_code": "Additional Manufacturer Narrative",
+          "patient_sequence_number": "1",
+          "text": "THE RESULTS, METHOD, AND CONCLUSION CODES ALONG WITH INVESTIGATION RESULTS WILL BE PROVIDED IN THE FINAL REPORT."
+        },
+        {
+          "mdr_text_key": "190531188",
+          "text_type_code": "Description of Event or Problem",
+          "patient_sequence_number": "1",
+          "text": "RELATED MANUFACTURER REFERENCE NUMBER: 2184149-2020-00050. DURING A PULMONARY VEIN ISOLATION ABLATION PROCEDURE, A CARDIAC TAMPONADE OCCURRED. WHEN ABLATION WAS BEING PERFORMED AN AMPLIFIER ERROR OCCURRED, WITH THE STATUS LIGHT CHANGING TO FLASHING ORANGE. IN ADDITION, THE ABLATION CATHETER WAS NO LONGER BEING DISPLAYED. THE AMPLIFIER WAS REPLACED TO RESOLVE THE ISSUE HOWEVER THE PATIENT HAD BECOME HYPOTENSIVE. AN ECHOCARDIOGRAM WAS PERFORMED REVEALING A CARDIAC TAMPONADE, FOR WHICH A PERICARDIOCENTESIS WAS PERFORMED TO STABILIZE THE PATIENT."
+        },
+        {
+          "mdr_text_key": "315555299",
+          "text_type_code": "Additional Manufacturer Narrative",
+          "patient_sequence_number": "0",
+          "text": "THE RESULTS OF THE INVESTIGATION ARE INCONCLUSIVE SINCE THE DEVICE WAS NOT RETURNED FOR ANALYSIS. REVIEW OF THE DEVICE HISTORY RECORD WAS NOT POSSIBLE AS THE LOT NUMBER IS UNKNOWN. BASED ON THE INFORMATION RECEIVED, THE CAUSE OF THE REPORTED INCIDENT COULD NOT BE CONCLUSIVELY DETERMINED. PER THE IFU, CARDIAC PERFORATION IS A KNOWN RISK DURING THE USE OF THIS DEVICE."
+        },
+        {
+          "mdr_text_key": "315555300",
+          "text_type_code": "Description of Event or Problem",
+          "patient_sequence_number": "0",
+          "text": "DURING A PULMONARY VEIN ISOLATION ABLATION PROCEDURE, A CARDIAC TAMPONADE OCCURRED. WHEN ABLATION WAS BEING PERFORMED AN AMPLIFIER ERROR OCCURRED, WITH THE STATUS LIGHT CHANGING TO FLASHING ORANGE. IN ADDITION, THE ABLATION CATHETER WAS NO LONGER BEING DISPLAYED. THE AMPLIFIER WAS REPLACED TO RESOLVE THE ISSUE HOWEVER THE PATIENT HAD BECOME HYPOTENSIVE. AN ECHOCARDIOGRAM WAS PERFORMED REVEALING A CARDIAC TAMPONADE, FOR WHICH A PERICARDIOCENTESIS WAS PERFORMED TO STABILIZE THE PATIENT. THE PULMONARY VEIN ISOLATION (PVI) WAS COMPLETED BUT THE PLANNED CTI ABLATION WAS NOT PERFORMED."
+        }
+      ],
+      "number_patients_in_event": "",
+      "distributor_name": "",
+      "manufacturer_g1_address_1": "",
+      "distributor_zip_code": "",
+      "manufacturer_contact_postal_code": "",
+      "manufacturer_contact_exchange": "",
+      "manufacturer_contact_pcountry": "",
+      "suppl_dates_fda_received": "06/09/2020"
+    },
+    {
+      "manufacturer_contact_zip_ext": "",
+      "manufacturer_g1_address_2": "",
+      "event_location": "I",
+      "report_to_fda": "N",
+      "manufacturer_contact_t_name": "",
+      "manufacturer_contact_state": "",
+      "manufacturer_link_flag": "Y",
+      "manufacturer_contact_address_2": "",
+      "manufacturer_g1_city": "",
+      "manufacturer_contact_address_1": "",
+      "manufacturer_contact_pcity": "",
+      "event_type": "Injury",
+      "report_number": "3005334138-2020-00168",
+      "type_of_report": [
+        "Initial submission"
+      ],
+      "product_problem_flag": "N",
+      "date_received": "20200427",
+      "manufacturer_address_2": "",
+      "pma_pmn_number": "P110016",
+      "reprocessed_and_reused_flag": "N",
+      "manufacturer_address_1": "",
+      "exemption_number": "",
+      "manufacturer_contact_zip_code": "",
+      "reporter_occupation_code": "PHYSICIAN",
+      "manufacturer_contact_plocal": "",
+      "noe_summarized": "1",
+      "manufacturer_contact_l_name": "",
+      "source_type": [
+        "FOREIGN",
+        "LITERATURE"
+      ],
+      "distributor_zip_code_ext": "",
+      "manufacturer_g1_postal_code": "",
+      "manufacturer_g1_state": "",
+      "reporter_country_code": "GM",
+      "manufacturer_contact_area_code": "",
+      "date_added": "20200427",
+      "manufacturer_contact_f_name": "",
+      "previous_use_code": "",
+      "device": [
+        {
+          "device_event_key": "",
+          "implant_flag": "",
+          "date_removed_flag": "",
+          "device_sequence_number": "463805",
+          "implant_date_year": "",
+          "date_removed_year": "",
+          "serviced_by_3rd_party_flag": "",
+          "date_received": "20200427",
+          "brand_name": "FLEXABILITY\u00bf ABLATION CATHETER, SENSOR ENABLED\u00bf CATHETER",
+          "generic_name": "CATHETER, PERCUTANEOUS, CARDIAC ABLATION, FOR TREATMENT OF ATRIAL FLUTTER",
+          "manufacturer_d_name": "ST. JUDE MEDICAL",
+          "manufacturer_d_address_1": "5050 NATHAN LANE NORTH",
+          "manufacturer_d_address_2": "",
+          "manufacturer_d_city": "PLYMOUTH",
+          "manufacturer_d_state": "MN",
+          "manufacturer_d_zip_code": "55442",
+          "manufacturer_d_zip_code_ext": "",
+          "manufacturer_d_country": "US",
+          "manufacturer_d_postal_code": "55442",
+          "device_operator": "HEALTH PROFESSIONAL",
+          "model_number": "",
+          "catalog_number": "",
+          "lot_number": "",
+          "other_id_number": "",
+          "device_availability": "No",
+          "device_report_product_code": "OAD",
+          "device_age_text": "",
+          "device_evaluated_by_manufacturer": "",
+          "combination_product_flag": "N",
+          "udi_di": "",
+          "udi_public": "",
+          "openfda": {
+            "registration_number": [
+              "3005334138"
+            ],
+            "fei_number": [
+              "3005334138"
+            ],
+            "device_name": "Catheter, Percutaneous, Cardiac Ablation, For Treatment Of Atrial Flutter",
+            "medical_specialty_description": "Unknown",
+            "regulation_number": "",
+            "device_class": "3"
+          }
+        }
+      ],
+      "product_problems": [
+        "Adverse Event Without Identified Device or Use Problem",
+        "Adverse Event Without Identified Device or Use Problem"
+      ],
+      "reporter_state_code": "",
+      "manufacturer_zip_code": "",
+      "suppl_dates_mfr_received": "",
+      "mfr_report_type": "Thirty-Day",
+      "manufacturer_contact_country": "",
+      "date_changed": "20250813",
+      "health_professional": "",
+      "summary_report_flag": "N",
+      "manufacturer_g1_zip_code_ext": "",
+      "manufacturer_contact_extension": "",
+      "manufacturer_city": "",
+      "manufacturer_contact_phone_number": "",
+      "patient": [
+        {
+          "patient_sequence_number": "1",
+          "date_received": "20200427",
+          "sequence_number_treatment": [
+            ""
+          ],
+          "sequence_number_outcome": [
+            "Other"
+          ],
+          "patient_age": "",
+          "patient_sex": "",
+          "patient_weight": "",
+          "patient_ethnicity": "",
+          "patient_race": "",
+          "patient_problems": [
+            "Cardiac Perforation",
+            "Cardiac Perforation"
+          ]
+        }
+      ],
+      "distributor_city": "",
+      "date_report": "20200427",
+      "initial_report_to_fda": "",
+      "distributor_state": "",
+      "event_key": "",
+      "manufacturer_g1_country": "",
+      "manufacturer_contact_city": "",
+      "mdr_report_key": "10000534",
+      "removal_correction_number": "",
+      "number_devices_in_event": "",
+      "date_manufacturer_received": "20200406",
+      "manufacturer_name": "",
+      "report_source_code": "Manufacturer report",
+      "remedial_action": [
+        ""
+      ],
+      "manufacturer_g1_zip_code": "",
+      "report_to_manufacturer": "",
+      "manufacturer_zip_code_ext": "",
+      "manufacturer_g1_name": "",
+      "adverse_event_flag": "Y",
+      "distributor_address_1": "",
+      "manufacturer_state": "",
+      "distributor_address_2": "",
+      "manufacturer_postal_code": "",
+      "single_use_flag": "",
+      "manufacturer_country": "",
+      "mdr_text": [
+        {
+          "mdr_text_key": "190531473",
+          "text_type_code": "Additional Manufacturer Narrative",
+          "patient_sequence_number": "1",
+          "text": "THE RESULTS OF THE INVESTIGATION ARE INCONCLUSIVE SINCE THE DEVICE WAS NOT RETURNED FOR ANALYSIS. THE DEVICE HISTORY RECORD WAS NOT REVIEWED AS THE BATCH NUMBER WAS NOT AVAILABLE. BASED ON THE INFORMATION RECEIVED, THE CAUSE OF THE REPORTED PERICARDIAL EFFUSION COULD NOT BE CONCLUSIVELY DETERMINED."
+        },
+        {
+          "mdr_text_key": "190531474",
+          "text_type_code": "Description of Event or Problem",
+          "patient_sequence_number": "1",
+          "text": "RELATED MANUFACTURING REFERENCE: 3008452825-2020-00214. THE FOLLOWING WAS PUBLISHED IN EUROPACE IN AN ARTICLE TITLED \"SAFETY AND OUTCOME OF VERY HIGH-POWER SHORT-DURATION ABLATION USING 70 W FOR PULMONARY VEIN ISOLATION IN PATIENTS WITH PAROXYSMAL ATRIA FIBRILLATION\" BY M KOTTMAIER ET AL., 2020; 22: 388-393. DOI: 10.1093/EUROPACE/EUZ342. THE AIM OF THIS STUDY WAS TO COMPARE INTRAPROCEDURAL SAFETY AND OUTCOME OF HIGH-POWER SHORT-DURATION (HPSD) ABLATION TO CONVENTIONAL POWER SETTINGS IN PATIENTS UNDERGOING PULMONARY VEIN ISOLATION (PVI) FOR PAROXYSMAL ATRIAL FIBRILLATION (PAF). THERE WERE 197 PATIENTS WITH PAF SCHEDULED FOR PVI ENROLLED IN THE STUDY. AN ABLATION WITH 70 W AND A DURATION CUT-OFF OF 7 SECONDS AT THE ANTERIOR LEFT ATRIUM (LA) AND 5 SECONDS AT THE POSTERIOR LA WAS COMPARED TO CONVENTIONAL POWER PROTOCOL WITH 30-40 W FOR 20-40 SECONDS. THE STUDY SHOWED THAT IN A 1-YEAR OUTCOME THE HPSD GROUP SHOWED SIGNIFICANTLY LESS ARRHYTHMIA RECURRENCE (83.1%) COMPARED TO 65.1% IN THE STANDARD GROUP. OF THE 197 PATIENTS THERE WERE A TOTAL OF 5 PERICARDIAL EFFUSIONS > 5MM WITHOUT TAMPONADE."
+        }
+      ],
+      "number_patients_in_event": "",
+      "distributor_name": "",
+      "manufacturer_g1_address_1": "",
+      "distributor_zip_code": "",
+      "manufacturer_contact_postal_code": "",
+      "manufacturer_contact_exchange": "",
+      "manufacturer_contact_pcountry": "",
+      "suppl_dates_fda_received": ""
+    },
+    {
+      "manufacturer_contact_zip_ext": "",
+      "manufacturer_g1_address_2": "",
+      "event_location": "",
+      "report_to_fda": "",
+      "manufacturer_contact_t_name": "",
+      "manufacturer_contact_state": "CA",
+      "manufacturer_link_flag": "Y",
+      "manufacturer_contact_address_2": "",
+      "manufacturer_g1_city": "SANTA CLARA",
+      "manufacturer_contact_address_1": "3410 CENTRAL EXPRESSWAY",
+      "manufacturer_contact_pcity": "40852321",
+      "event_type": "Malfunction",
+      "report_number": "2955842-2020-10453",
+      "type_of_report": [
+        "Initial submission",
+        "Followup",
+        "Followup",
+        "Followup"
+      ],
+      "product_problem_flag": "Y",
+      "date_received": "20200504",
+      "manufacturer_address_2": "",
+      "pma_pmn_number": "K143132",
+      "date_of_event": "20200407",
+      "reprocessed_and_reused_flag": "N",
+      "manufacturer_address_1": "",
+      "exemption_number": "",
+      "manufacturer_contact_zip_code": "95051",
+      "reporter_occupation_code": "NURSE",
+      "manufacturer_contact_plocal": "4085232100",
+      "noe_summarized": "1",
+      "manufacturer_contact_l_name": "WANG",
+      "source_type": [
+        "Other",
+        "Foreign"
+      ],
+      "distributor_zip_code_ext": "",
+      "manufacturer_g1_postal_code": "95051",
+      "manufacturer_g1_state": "CA",
+      "reporter_country_code": "KS",
+      "manufacturer_contact_area_code": "408",
+      "date_added": "20200504",
+      "manufacturer_contact_f_name": "DAVID",
+      "device_date_of_manufacturer": "20190912",
+      "previous_use_code": "A",
+      "device": [
+        {
+          "device_event_key": "",
+          "implant_flag": "",
+          "date_removed_flag": "",
+          "device_sequence_number": "485944",
+          "implant_date_year": "",
+          "date_removed_year": "",
+          "serviced_by_3rd_party_flag": "",
+          "date_received": "20200504",
+          "brand_name": "DA VINCI",
+          "generic_name": "HARMONIC ACE",
+          "manufacturer_d_name": "INTUITIVE SURGICAL, INC",
+          "manufacturer_d_address_1": "3410 CENTRAL EXPRESSWAY",
+          "manufacturer_d_address_2": "",
+          "manufacturer_d_city": "SANTA CLARA",
+          "manufacturer_d_state": "CA",
+          "manufacturer_d_zip_code": "95051",
+          "manufacturer_d_zip_code_ext": "",
+          "manufacturer_d_country": "US",
+          "manufacturer_d_postal_code": "95051",
+          "device_operator": "HEALTH PROFESSIONAL",
+          "model_number": "480275-08",
+          "catalog_number": "480275",
+          "lot_number": "M90190917 0143",
+          "other_id_number": "",
+          "device_availability": "Device was returned to manufacturer",
+          "date_returned_to_manufacturer": "20200518",
+          "device_report_product_code": "NAY",
+          "device_age_text": "DA",
+          "device_evaluated_by_manufacturer": "Y",
+          "combination_product_flag": "N",
+          "udi_di": "10886874112738",
+          "udi_public": "(01)10886874112738(17)210930(10)M90190917",
+          "openfda": {
+            "registration_number": [
+              "2955842"
+            ],
+            "fei_number": [
+              "3008615487"
+            ],
+            "device_name": "System, Surgical, Computer Controlled Instrument",
+            "medical_specialty_description": "Gastroenterology, Urology",
+            "regulation_number": "876.1500",
+            "device_class": "2"
+          }
+        }
+      ],
+      "product_problems": [
+        "Melted",
+        "Component Missing",
+        "Arcing",
+        "Melted",
+        "Component Missing",
+        "Arcing"
+      ],
+      "reporter_state_code": "",
+      "manufacturer_zip_code": "",
+      "suppl_dates_mfr_received": "05/07/2020;06/03/2020;05/19/2020",
+      "mfr_report_type": "",
+      "manufacturer_contact_country": "US",
+      "date_changed": "20250819",
+      "health_professional": "Y",
+      "summary_report_flag": "N",
+      "manufacturer_g1_zip_code_ext": "",
+      "manufacturer_contact_extension": "",
+      "manufacturer_city": "",
+      "manufacturer_contact_phone_number": "4085",
+      "patient": [
+        {
+          "patient_sequence_number": "1",
+          "date_received": "20200504",
+          "sequence_number_treatment": [
+            "DA VINCI INSTRUMENTS AND ACCESSORIES",
+            " DA VINCI INSTRUMENTS AND ACCESSORIES"
+          ],
+          "sequence_number_outcome": [
+            ""
+          ],
+          "patient_age": "",
+          "patient_sex": "Unknown",
+          "patient_weight": "",
+          "patient_ethnicity": "",
+          "patient_race": "",
+          "patient_problems": [
+            "No Known Impact Or Consequence To Patient",
+            "No Known Impact Or Consequence To Patient"
+          ]
+        }
+      ],
+      "distributor_city": "",
+      "date_report": "20200407",
+      "initial_report_to_fda": "No",
+      "distributor_state": "",
+      "event_key": "",
+      "manufacturer_g1_country": "US",
+      "manufacturer_contact_city": "SANTA CLARA",
+      "mdr_report_key": "10020969",
+      "removal_correction_number": "",
+      "number_devices_in_event": "",
+      "date_manufacturer_received": "20200407",
+      "manufacturer_name": "",
+      "report_source_code": "Manufacturer report",
+      "remedial_action": [
+        ""
+      ],
+      "manufacturer_g1_zip_code": "95051",
+      "report_to_manufacturer": "",
+      "manufacturer_zip_code_ext": "",
+      "manufacturer_g1_name": "INTUITIVE SURGICAL, INC",
+      "adverse_event_flag": "N",
+      "distributor_address_1": "",
+      "manufacturer_state": "",
+      "distributor_address_2": "",
+      "manufacturer_postal_code": "",
+      "single_use_flag": "Y",
+      "manufacturer_country": "",
+      "mdr_text": [
+        {
+          "mdr_text_key": "315933575",
+          "text_type_code": "Additional Manufacturer Narrative",
+          "patient_sequence_number": "0",
+          "text": "THE OR NURSE PROVIDED A CORRECTION TO PREVIOUS FOLLOW-UP INFORMATION: THE EVENT OCCURRED WHEN THE SURGEON WAS DISSECTING TISSUE. THE SURGEON NOTICED THE SILICON PART OF THE HARMONIC ACE CURVED SHEAR HAD BEEN LIFTED. NO ARCING EVENT OCCURRED; HOWEVER, THE INSTRUMENT TIP WAS IN CONTACT WITH TISSUE. 61 - ISI RECEIVED A VIDEO CLIP OF A DA VINCI-ASSISTED SURGICAL PROCEDURE. A REVIEW OF THE VIDEO CLIP WAS CONDUCTED BY AN ISI FAILURE ANALYSIS ENGINEER (FAE) AND ISI CLINICAL DEVELOPMENT ENGINEER (CDE). THE REVIEWERS IDENTIFIED ACTIVATIONS WITH MINIMAL TISSUE IN THE GRIPS OF THE INSTRUMENT. IN ADDITION, IT APPEARED THAT THE SURGEON USED ONLY THE DISTAL TIP OF THE HARMONIC ACE TO QUICKLY SEPARATE THE TISSUE LAYERS; MEANING THE MAJORITY OF THE TEFLON PAD WOULD HEAT UP AND COULD POTENTIALLY BE DAMAGED. BASED ON THE ADDITIONAL INFORMATION OBTAINED FROM THE CUSTOMER, THIS EVENT REMAINS NON-REPORTABLE."
+        },
+        {
+          "mdr_text_key": "336901543",
+          "text_type_code": "Description of Event or Problem",
+          "patient_sequence_number": "0",
+          "text": "REFER TO H10/H11 FOR FOLLOW-UP INFORMATION."
+        },
+        {
+          "mdr_text_key": "336901544",
+          "text_type_code": "Additional Manufacturer Narrative",
+          "patient_sequence_number": "0",
+          "text": "BASED ON A RE-EVALUATION OF THE COMPLAINT INFORMATION, THIS COMPLAINT REMAINS A REPORTABLE PRODUCT PROBLEM. PLEASE DISREGARD THE PREVIOUS H10 STATEMENT INDICATING THAT THIS COMPLAINT IS NO LONGER MDR REPORTABLE."
+        },
+        {
+          "mdr_text_key": "189769646",
+          "text_type_code": "Additional Manufacturer Narrative",
+          "patient_sequence_number": "1",
+          "text": "ISI HAS NOT YET RECEIVED THE HARMONIC ACE INSTRUMENT FOR EVALUATION. THEREFORE, THE ROOT CAUSE OF THE CUSTOMER REPORTED FAILURE MODE COULD NOT BE DETERMINED. A FOLLOW UP MDR WILL BE SUBMITTED IF ADDITIONAL INFORMATION IS RECEIVED. SYSTEM LOGS WERE UNABLE TO BE REVIEWED DUE TO INCOMPLETE INSTRUMENT INFORMATION TO IDENTIFY THE SPECIFIC PROCEDURE. A REVIEW OF THE SITE'S COMPLAINT HISTORY DOES NOT SHOW ANY ADDITIONAL COMPLAINTS RELATED TO THIS PRODUCT AND/OR THIS EVENT. NO IMAGE OR VIDEO CLIP OF THE REPORTED EVENT WAS SUBMITTED FOR REVIEW. BASED ON THE INFORMATION PROVIDED, THIS EVENT IS BEING REPORTED DUE TO THE FOLLOWING CONCLUSION: THE HARMONIC ACE INSTRUMENT ARCED, SMOKED, OR HAD CONDUCTOR WIRE DAMAGE WITH NO EVIDENCE OR CLAIM OF USER MISHANDLING OR MISUSE. WHILE THERE WAS NO HARM OR INJURY TO THE PATIENT, THE REPORTED FAILURE MODE COULD CAUSE OR CONTRIBUTE TO AN ADVERSE EVENT IF IT WERE TO RECUR."
+        },
+        {
+          "mdr_text_key": "189769647",
+          "text_type_code": "Description of Event or Problem",
+          "patient_sequence_number": "1",
+          "text": "IT WAS REPORTED THAT DURING A DA VINCI-ASSISTED SURGICAL PROCEDURE, THE SILICONE AT THE FRONT OF THE TIP OF THE HARMONIC ACE INSTRUMENT HAD BEEN MELTED. THE CUSTOMER STOPPED USING THE FAULTY INSTRUMENT AND SWITCHED TO A BACKUP INSTRUMENT TO CONTINUE. THE PROCEDURE WAS COMPLETED WITH NO REPORTED INJURY. INTUITIVE SURGICAL, INC. (ISI) HAS MADE MULTIPLE FOLLOW-UP ATTEMPTS TO OBTAIN ADDITIONAL INFORMATION. HOWEVER, NO FURTHER DETAILS HAVE BEEN RECEIVED AS OF THE DATE OF THIS REPORT."
+        },
+        {
+          "mdr_text_key": "316504137",
+          "text_type_code": "Description of Event or Problem",
+          "patient_sequence_number": "0",
+          "text": "REFER TO H10/H11 FOR ADDITIONAL INFORMATION."
+        },
+        {
+          "mdr_text_key": "316504138",
+          "text_type_code": "Additional Manufacturer Narrative",
+          "patient_sequence_number": "0",
+          "text": "ADDITIONAL INFORMATION CAN BE FOUND IN THE FOLLOWING SECTIONS: D10, G4, G7, H2, H3, H6 AND H10. INTUITIVE SURGICAL, INC. (ISI) FOLLOWED UP WITH THE OR NURSE AND OBTAINED THE FOLLOWING ADDITIONAL INFORMATION: THE HARMONIC ACE CURVED SHEAR WAS INSPECTED PRIOR TO USE. NO ARCING OR SMOKING WAS OBSERVED. AFTER CLEANING THE INSTRUMENT, THE CUSTOMER COULD NOT FIND ANY DAMAGES WITH THE NAKED EYE. THE INSTRUMENT WAS INSERTED INTO THE PATIENT'S BODY AND AN ABNORMALITY WAS OBSERVED ON THE SCREEN. THE CUSTOMER NOTICED THE SILICON PART OF THE INSTRUMENT SEEMED TO SHRINK. THE INSTRUMENT WAS REMOVED FROM THE SYSTEM AND NOT USED. A BACKUP INSTRUMENT WAS USED TO CONTINUE THE PROCEDURE. THE CANNULA WAS INSPECTED PRIOR TO USE. THE CUSTOMER CONFIRMED THEY DID NOT CONNECT A MONOPOLAR CORD TO A BIPOLAR INSTRUMENT. A LONG BIPOLAR FORCEPS WAS IN USE ALONG WITH THE HARMONIC ACE CURVED SHEAR. THE INSTRUMENT TIPS DID NOT COLLIDE WITH ANY OTHER INSTRUMENT OR TOOL AND THE TIPS OF THE INSTRUMENT WERE NOT IN CONTACT WITH TISSUE WHEN THE ISSUE WAS IDENTIFIED. THE INSTRUMENT WAS REMOVED ONLY THE ONE TIME. THERE WAS NO INJURY TO THE PATIENT AND NO ALLEGATION OF A FRAGMENT FALLING INSIDE THE PATIENT. THE PATIENT HAS NOT RETURNED TO THE HOSPITAL DUE TO EXPERIENCING ANY POST-SURGICAL COMPLICATIONS RELATED TO THIS EVENT. 4307 - INTUITIVE SURGICAL, INC. (ISI) RECEIVED THE HARMONIC ACE INSTRUMENT INVOLVED WITH THIS COMPLAINT AND COMPLETED THE DEVICE EVALUATION. FAILURE ANALYSIS REPLICATED AND CONFIRMED THE CUSTOMER REPORTED COMPLAINT OF \"SILICON AT THE FRONT OF THE TIP HAS BEEN MELTED\". AFTER INSPECTION OF THE INSTRUMENT, THE WHITE TEFLON OF THE CLAMPING ARM WAS FOUND TO HAVE MISSING MATERIAL. MISSING MATERIAL MEASURED 0.062\" X 0.020\". NO THERMAL DAMAGE WAS FOUND. A REVIEW OF THE INSTRUMENT LOG FOR THE HARMONIC ACE CURVED SHEAR (PART # 480275-08/ LOT # M90190917-0143) ASSOCIATED WITH THIS EVENT HAS BEEN PERFORMED. PER LOGS, THE HARMONIC ACE CURVED SHEAR WAS LAST USED ON (B)(6) 2020 ON SYSTEM SK2275. THIS IS A SINGLE USE INSTRUMENT. NO ADDITIONAL LOG REVIEW WAS PERFORMED AS THIS TYPE OF FAILURE WOULD NOT RESULT IN AN ERROR IN THE LOGS. A REVIEW OF THE SITE'S COMPLAINT HISTORY DOES NOT SHOW ANY ADDITIONAL COMPLAINTS RELATED TO THIS PRODUCT AND/OR THIS EVENT. NO IMAGE OR VIDEO CLIP OF THE REPORTED EVENT WAS SUBMITTED FOR REVIEW. BASED ON THE ADDITIONAL INFORMATION OBTAINED FROM THE CUSTOMER, THE INITIAL MDR REPORT IS BEING RETRACTED DUE TO THE FOLLOWING: THERE WAS NO ARCING OR SMOKING OBSERVED BY THE CUSTOMER. THE HARMONIC ACE CURVED SHEAR WAS INSTALLED AND INSERTED INTO THE SURGICAL FIELD. HOWEVER, WHEN THE INSTRUMENT ABNORMALITY WAS OBSERVED, IT WAS REMOVED FROM THE PATIENT, UNINSTALLED FROM THE SYSTEM, AND WAS NOT USED DURING THE PROCEDURE. THERE IS NO EVIDENCE THAT THE ISI DEVICE CAUSED OR CONTRIBUTED TO AN ADVERSE EVENT OR THAT THE ISI DEVICE MALFUNCTIONED IN A WAY THAT COULD CONTRIBUTE TO AN ADVERSE EVENT IF IT WERE TO RECUR. THE HARMONIC ACE CURVED SHEAR INSTRUCTION FOR USE (IFU) STATES THE FOLLOWING: 1. INSPECT THE HARMONIC ACE CURVED SHEAR AND DO NOT USE THE INSTRUMENT IF IT IS DAMAGED. 2. BLOOD AND TISSUE BUILDUP BETWEEN THE BLADE AND CLAMP ARM MAY RESULT IN ABNORMALLY HIGH TEMPERATURES AT THE DISTAL END OF THE INSTRUMENT. FOR OPTIMUM PERFORMANCE AND TO PREVENT BURN INJURY, REMOVE ANY VISIBLE TISSUE BUILDUP AT THE DISTAL END BY SAFELY REMOVING THE INSTRUMENT AND WIPING WITH MOIST GAUZE. 3. TO AVOID DAMAGE TO THE TISSUE PAD, KEEP THE CLAMP ARM OPEN WHILE THE BLADE IS ACTIVE WITHOUT TISSUE BETWEEN THE BLADE AND THE TISSUE PAD."
+        }
+      ],
+      "number_patients_in_event": "",
+      "distributor_name": "",
+      "manufacturer_g1_address_1": "3410 CENTRAL EXPRESSWAY",
+      "distributor_zip_code": "",
+      "manufacturer_contact_postal_code": "95051",
+      "manufacturer_contact_exchange": "408",
+      "manufacturer_contact_pcountry": "",
+      "suppl_dates_fda_received": "06/01/2020;06/26/2020;05/24/2023"
+    },
+    {
+      "manufacturer_contact_zip_ext": "",
+      "manufacturer_g1_address_2": "",
+      "event_location": "",
+      "report_to_fda": "",
+      "manufacturer_contact_t_name": "",
+      "manufacturer_contact_state": "",
+      "manufacturer_link_flag": "Y",
+      "manufacturer_contact_address_2": "",
+      "manufacturer_g1_city": "",
+      "manufacturer_contact_address_1": "",
+      "manufacturer_contact_pcity": "",
+      "event_type": "Death",
+      "report_number": "2955842-2008-00073",
+      "type_of_report": [
+        "Initial submission"
+      ],
+      "product_problem_flag": "N",
+      "date_received": "20080222",
+      "manufacturer_address_2": "",
+      "pma_pmn_number": "",
+      "date_of_event": "20080124",
+      "reprocessed_and_reused_flag": "N",
+      "manufacturer_address_1": "",
+      "exemption_number": "",
+      "manufacturer_contact_zip_code": "",
+      "reporter_occupation_code": "NOT APPLICABLE",
+      "manufacturer_contact_plocal": "",
+      "noe_summarized": "1",
+      "manufacturer_contact_l_name": "",
+      "source_type": [
+        "Company representation"
+      ],
+      "distributor_zip_code_ext": "",
+      "manufacturer_g1_postal_code": "",
+      "manufacturer_g1_state": "",
+      "reporter_country_code": "US",
+      "manufacturer_contact_area_code": "",
+      "date_added": "20080228",
+      "manufacturer_contact_f_name": "",
+      "previous_use_code": "",
+      "device": [
+        {
+          "device_event_key": "",
+          "implant_flag": "",
+          "date_removed_flag": "",
+          "device_sequence_number": "1",
+          "date_received": "20080222",
+          "brand_name": "DA VINCI S SURGICAL SYSTEM",
+          "generic_name": "ENDOSCOPIC INSTRUMENT CONTROL SYSTEM",
+          "manufacturer_d_name": "INTUITIVE SURGICAL, INC.",
+          "manufacturer_d_address_1": "",
+          "manufacturer_d_address_2": "",
+          "manufacturer_d_city": "SUNNYVALE",
+          "manufacturer_d_state": "CA",
+          "manufacturer_d_zip_code": "",
+          "manufacturer_d_zip_code_ext": "",
+          "manufacturer_d_country": "US",
+          "manufacturer_d_postal_code": "",
+          "device_operator": "HEALTH PROFESSIONAL",
+          "model_number": "IS2000 A5.1P4",
+          "catalog_number": "",
+          "lot_number": "",
+          "other_id_number": "",
+          "device_availability": "No",
+          "device_report_product_code": "NAY",
+          "device_age_text": "DA",
+          "device_evaluated_by_manufacturer": "N",
+          "combination_product_flag": "N",
+          "udi_di": "",
+          "udi_public": "",
+          "openfda": {
+            "registration_number": [
+              "2955842"
+            ],
+            "fei_number": [
+              "3008615487"
+            ],
+            "device_name": "System, Surgical, Computer Controlled Instrument",
+            "medical_specialty_description": "Gastroenterology, Urology",
+            "regulation_number": "876.1500",
+            "device_class": "2"
+          }
+        }
+      ],
+      "product_problems": [
+        "Unknown (for use when the device problem is not known)"
+      ],
+      "reporter_state_code": "LA",
+      "manufacturer_zip_code": "",
+      "suppl_dates_mfr_received": "",
+      "mfr_report_type": "Thirty-Day",
+      "manufacturer_contact_country": "",
+      "date_changed": "20250729",
+      "health_professional": "",
+      "summary_report_flag": "N",
+      "manufacturer_g1_zip_code_ext": "",
+      "manufacturer_contact_extension": "",
+      "manufacturer_city": "",
+      "manufacturer_contact_phone_number": "",
+      "patient": [
+        {
+          "patient_sequence_number": "1",
+          "date_received": "20080222",
+          "sequence_number_treatment": [
+            "ACCESSORIES",
+            " DA VINCI S SURGICAL SYSTEM INSTRUMENTS"
+          ],
+          "sequence_number_outcome": [
+            "Death"
+          ],
+          "patient_age": "73 YR",
+          "patient_sex": "",
+          "patient_weight": "82",
+          "patient_ethnicity": "",
+          "patient_race": "",
+          "patient_problems": [
+            "Death",
+            "Low Blood Pressure/ Hypotension",
+            "Reaction"
+          ]
+        }
+      ],
+      "distributor_city": "",
+      "date_report": "20080222",
+      "initial_report_to_fda": "",
+      "distributor_state": "",
+      "event_key": "",
+      "manufacturer_g1_country": "",
+      "manufacturer_contact_city": "",
+      "mdr_report_key": "1002352",
+      "removal_correction_number": "",
+      "number_devices_in_event": "",
+      "date_manufacturer_received": "20080124",
+      "manufacturer_name": "",
+      "report_source_code": "Manufacturer report",
+      "remedial_action": [
+        ""
+      ],
+      "manufacturer_g1_zip_code": "",
+      "report_to_manufacturer": "",
+      "manufacturer_zip_code_ext": "",
+      "manufacturer_g1_name": "",
+      "adverse_event_flag": "Y",
+      "distributor_address_1": "",
+      "manufacturer_state": "",
+      "distributor_address_2": "",
+      "manufacturer_postal_code": "",
+      "single_use_flag": "",
+      "manufacturer_country": "",
+      "mdr_text": [
+        {
+          "mdr_text_key": "17371027",
+          "text_type_code": "Description of Event or Problem",
+          "patient_sequence_number": "1",
+          "text": "IN 2008, AFTER A SINGLE VESSEL SMALL THORACOTOMY DA VINCI S PROCEDURE, THE PATIENT EXPIRED WHILE WEANING OFF OF BYPASS. PRIOR TO THE PROCEDURE, THE PATIENT APPEARED TO HAVE A HEPARIN REACTION AND EXPERIENCED A HYPOTENSIVE EVENT WITH A SYSTOLIC PRESSURE OF 39MM. THE SITE INITIATED A CARDIOPULMONARY BYPASS RUN AND COMPLETED THE PROCEDURE WITHOUT EVENT. WEAN FROM BYPASS WAS UNSUCCESSFUL AS PATIENT EXHIBITED STONE HEART CHARACTERISTICS. NO MALFUNCTION OF THE DAVINCI S SYSTEM WAS ALLEGED BY THE HOSPITAL, AND THE INFORMATION PROVIDED INDICATES THAT THIS EVENT IS RELATED TO THE INHERENT RISKS ASSOCIATED WITH BYPASS AND THE PATIENT'S MEDICAL HISTORY."
+        },
+        {
+          "mdr_text_key": "17545207",
+          "text_type_code": "Additional Manufacturer Narrative",
+          "patient_sequence_number": "1",
+          "text": "IN 2008, INTUITIVE SURGICAL HAS REQUESTED ADDITIONAL INFORMATION RELATED TO THIS EVENT FROM THIS SITE. A FOLLOW-UP MDR WILL BE SUBMITTED IF ADDITIONAL INFORMATION BECOMES AVAILABLE. THE HOSPITAL HAS CONTINUED TO USE THE DA VINCI S SYSTEM TO PERFORM SURGERY ON PATIENTS. AS OF  2008, NO ADVERSE EVENTS OR PRODUCT PROBLEMS HAVE BEEN EXPERIENCED WITH THE SITE'S DA VINCI S SYSTEM. AS OF 2008, NO SIMILAR INSTANCE OF THIS EVENT HAVE BEEN REPORTED TO ISI."
+        }
+      ],
+      "number_patients_in_event": "",
+      "distributor_name": "",
+      "manufacturer_g1_address_1": "",
+      "distributor_zip_code": "",
+      "manufacturer_contact_postal_code": "",
+      "manufacturer_contact_exchange": "",
+      "manufacturer_contact_pcountry": "",
+      "suppl_dates_fda_received": ""
+    }
+  ]
+}

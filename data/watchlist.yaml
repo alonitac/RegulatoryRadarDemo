@@ -1,0 +1,30 @@
+# Device families that Regulatory Radar keeps an eye on.
+# product_codes are FDA three-letter product codes (for example DXY).
+# They are empty on purpose; you will fill them in during the course.
+
+- name: Pacemakers
+  keywords:
+    - pacemaker
+    - pulse generator
+  product_codes: []
+
+- name: Implantable defibrillators
+  keywords:
+    - implantable cardioverter defibrillator
+    - ICD
+    - S-ICD
+  product_codes: []
+
+- name: Cardiac ablation catheters
+  keywords:
+    - ablation catheter
+    - radiofrequency ablation
+    - cryoablation
+  product_codes: []
+
+- name: Surgical robots
+  keywords:
+    - surgical robot
+    - robotic surgical system
+    - robotic guidance
+  product_codes: []
