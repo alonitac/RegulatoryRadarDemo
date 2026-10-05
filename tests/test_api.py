@@ -16,7 +16,8 @@ def test_health_reports_fixture_mode():
 def test_products_list_and_detail():
     items = client.get("/products").json()
     assert len(items) == 6
-    assert all(item["product_codes"] == [] for item in items)
+    assert all(item["product_codes"] for item in items)
+    assert all(len(code) == 3 and code.isupper() for item in items for code in item["product_codes"])
     assert client.get("/products/pulse-dr").json()["name"] == "Acme Pulse DR"
     assert client.get("/products/does-not-exist").status_code == 404
 
