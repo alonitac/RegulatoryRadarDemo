@@ -11,6 +11,8 @@ from app import openfda, portfolio
 from app.config import settings
 from app.models import Clearance, Product, Recall, Update
 
+APP_VERSION = "v1.1.1"
+
 app = FastAPI(
     title="Regulatory Radar",
     description="What is happening in the regulatory world, and what does it mean for our products?",
@@ -22,6 +24,12 @@ app = FastAPI(
 def health() -> dict:
     """Liveness check that also tells you which data mode is active."""
     return {"status": "ok", "mode": settings.openfda_mode}
+
+
+@app.get("/version")
+def version() -> dict:
+    """The static application version."""
+    return {"version": APP_VERSION}
 
 
 @app.get("/products")
