@@ -2,7 +2,7 @@
 
 from pydantic import BaseModel
 
-
+x =6 
 class Product(BaseModel):
     """One product in the Acme MedTech portfolio (from data/portfolio.yaml)."""
 
