@@ -11,13 +11,6 @@ A small web service for a Regulatory Affairs team. It answers two questions:
 It is intentionally small so you can read all of it in one sitting and extend
 it during the course.
 
-## 1. Prerequisites
-
-- **Python 3.11 or newer.** Check with `python --version` (on macOS/Linux you
-  may need `python3 --version`). Download from <https://www.python.org/downloads/>
-  if needed. On Windows, tick "Add python.exe to PATH" in the installer.
-- **A terminal.** Terminal on macOS, any shell on Linux, PowerShell on Windows.
-- **Git** (optional, only if you want to track your changes).
 
 ## 2. Set up a virtual environment
 
