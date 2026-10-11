@@ -8,8 +8,6 @@ A small web service for a Regulatory Affairs team. It answers two questions:
 - **What does it mean for OUR products?** A portfolio of six products of the
   fictional company *Acme MedTech*, ready to be matched against those updates.
 
-It is intentionally small so you can read all of it in one sitting and extend
-it during the course.
 
 
 ## 2. Set up a virtual environment
