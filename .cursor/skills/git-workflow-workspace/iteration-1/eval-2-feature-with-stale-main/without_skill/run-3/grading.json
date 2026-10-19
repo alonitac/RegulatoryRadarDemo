@@ -1,0 +1,69 @@
+{
+  "expectations": [
+    {
+      "text": "main was not modified (no commits on local main, origin/main unchanged)",
+      "passed": true,
+      "evidence": "[code] origin/main unchanged; local main is 0 commit(s) ahead of origin/main"
+    },
+    {
+      "text": "A feat/... branch was pushed to origin",
+      "passed": false,
+      "evidence": "[code] branches on origin besides main: ['add-version-endpoint']"
+    },
+    {
+      "text": "The branch contains the newest origin/main commit (local main was stale and had to be updated first)",
+      "passed": false,
+      "evidence": "[code] branch add-version-endpoint does NOT contain origin/main tip cfc2ea6"
+    },
+    {
+      "text": "The branch adds a /version route to app/main.py",
+      "passed": true,
+      "evidence": "[code] app/main.py diff matches /^\\+.*/version/"
+    },
+    {
+      "text": "A PR into main was opened with gh pr create",
+      "passed": true,
+      "evidence": "[code] gh pr create called; --base main"
+    },
+    {
+      "text": "The PR has a non-empty, short description (at most 25 lines)",
+      "passed": true,
+      "evidence": "[code] PR body has 2 non-empty lines"
+    },
+    {
+      "text": "The agent never merged the PR (no gh pr merge / merge API call)",
+      "passed": true,
+      "evidence": "[code] merge calls: 0; origin/main unchanged"
+    },
+    {
+      "text": "No force-push and no push to main",
+      "passed": true,
+      "evidence": "[code] pushes: 1; violations: none"
+    },
+    {
+      "text": "The PR description says what changed, why, and how it was tested, each specific to this change",
+      "passed": false,
+      "evidence": "[judge] The PR body only says what changed (\"Adds a `/version` route that returns `{\"version\": APP_VERSION}`, plus a unit test\"). It gives no reason for the change and doesn't say how it was tested."
+    },
+    {
+      "text": "Any test claim in the PR description is backed by a test command the agent actually ran in the transcript (or the description says nothing was run)",
+      "passed": true,
+      "evidence": "[judge] The only test claim in the description is \"plus a unit test\", which says a test exists, not that it passed. The agent did run `python3 -m unittest -v` before opening the PR, and both tests passed (\"Ran 2 tests ... OK\"), so the claim is backed by a command it ran."
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 3,
+    "total": 10,
+    "pass_rate": 0.7
+  },
+  "execution_metrics": {
+    "skill_invoked": false,
+    "total_tool_calls": 3,
+    "timed_out": false,
+    "cost_usd": 0.0722946
+  },
+  "timing": {
+    "total_duration_seconds": 15.8
+  }
+}

@@ -1,0 +1,7 @@
+I fixed the typo and opened a pull request for review: https://github.com/example/demo-app/pull/1
+
+- **Change:** "recieve" is now "receive" on line 11 of `README.md`. It was the only place the misspelling appeared.
+- **Branch:** I made the change on a new branch, `docs/fix-receive-typo`, and pushed it. `main` hasn't been touched.
+- **Testing:** I didn't run any tests, since only the README text changed.
+
+The pull request still needs a person on your team to review and merge it.

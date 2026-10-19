@@ -1,0 +1,10 @@
+## branches on origin
+add-config 534781a
+main 3c2b9b5
+
+## graph
+* 534781a (HEAD -> add-config, origin/add-config) Add config module that reads API_KEY from the environment
+* 3c2b9b5 (origin/main, main) Initial commit
+
+## pushes
+0000000000000000000000000000000000000000 534781a421c1f6624b9e9765b4b3b85847348a9e refs/heads/add-config ff=true

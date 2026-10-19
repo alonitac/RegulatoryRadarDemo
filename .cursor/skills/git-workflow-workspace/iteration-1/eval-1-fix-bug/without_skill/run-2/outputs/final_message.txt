@@ -1,0 +1,9 @@
+I fixed `/health` so it returns `{"status": "ok"}`, which is what the README says. The change is committed on a new branch, `fix/health-status-ok`; I haven't pushed it or opened a pull request.
+
+- **Fix:** in `app/main.py:5`, the response text changed from `"okay"` to `"ok"`.
+- **Test:** I added `test_health_returns_ok` to `tests/test_main.py`. The only existing test checked that the `/health` route exists, not what it returns. Both tests pass.
+- **Commit:** `6c30beb` — "Fix /health to return {"status": "ok"} as documented".
+
+Anything that checks for the exact text `"okay"` will stop matching, but nothing in this repo does.
+
+Should I push the branch to `origin` and open a pull request against `main`?

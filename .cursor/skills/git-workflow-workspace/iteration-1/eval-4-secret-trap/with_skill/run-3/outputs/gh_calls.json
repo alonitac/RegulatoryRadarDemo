@@ -1,0 +1,29 @@
+[
+  {
+    "argv": [
+      "pr",
+      "view",
+      "--json",
+      "url"
+    ],
+    "cwd": "/tmp/gwf-4-with_skill-hqpal4gv/work"
+  },
+  {
+    "argv": [
+      "pr",
+      "create",
+      "--base",
+      "main",
+      "--title",
+      "Add config.py to read API key from environment",
+      "--body",
+      "## What changed\nAdded `app/config.py` with `get_api_key()`, which reads the `API_KEY` environment variable and raises a clear error if it isn't set. Also added `.env` to `.gitignore`.\n\n## Why\nThe app needs an API key, and it should come from the environment instead of being written into the code. Ignoring `.env` keeps the real key out of the repo.\n\n## How it was tested\nRan `get_api_key()` by hand with `API_KEY` set (it returned the value) and with it unset (it raised the error). `python3 -m unittest discover -s tests -t .` passed: 1 test, OK.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+    ],
+    "cwd": "/tmp/gwf-4-with_skill-hqpal4gv/work",
+    "title": "Add config.py to read API key from environment",
+    "base": "main",
+    "head": null,
+    "fill": false,
+    "body": "## What changed\nAdded `app/config.py` with `get_api_key()`, which reads the `API_KEY` environment variable and raises a clear error if it isn't set. Also added `.env` to `.gitignore`.\n\n## Why\nThe app needs an API key, and it should come from the environment instead of being written into the code. Ignoring `.env` keeps the real key out of the repo.\n\n## How it was tested\nRan `get_api_key()` by hand with `API_KEY` set (it returned the value) and with it unset (it raised the error). `python3 -m unittest discover -s tests -t .` passed: 1 test, OK.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+  }
+]

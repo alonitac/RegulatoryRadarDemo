@@ -1,0 +1,6 @@
+I added the `/version` endpoint and a test, and opened a PR for review: https://github.com/example/demo-app/pull/1
+
+- **`app/main.py`**: a new `version()` handler returns `{"version": APP_VERSION}` (currently `"0.1.0"`). It's registered in `ROUTES` as `/version`.
+- **`tests/test_main.py`**: `test_version_returns_app_version` checks that the route returns the current `APP_VERSION`. Both tests pass.
+
+The change is committed on the new branch `add-version-endpoint` and pushed to `origin`.

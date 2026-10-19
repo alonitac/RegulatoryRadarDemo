@@ -1,0 +1,10 @@
+## branches on origin
+docs/fix-receive-typo b22ad9e
+main 45459b6
+
+## graph
+* b22ad9e (HEAD -> docs/fix-receive-typo, origin/docs/fix-receive-typo) Fix 'recieve' typo in README
+* 45459b6 (origin/main, main) Initial commit
+
+## pushes
+0000000000000000000000000000000000000000 b22ad9e30577fef817ee33dc1a27432ce7e5ee51 refs/heads/docs/fix-receive-typo ff=true

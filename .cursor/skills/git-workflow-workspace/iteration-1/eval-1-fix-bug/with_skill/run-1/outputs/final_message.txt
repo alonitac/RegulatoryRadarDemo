@@ -1,0 +1,8 @@
+I fixed it, and the change is open for review: https://github.com/example/demo-app/pull/1
+
+- **The fix:** `/health` in `app/main.py` now returns `{"status": "ok"}`, which matches the README.
+- **New test:** I added a test in `tests/test_main.py` that checks the exact response. The existing test only checked that the route exists, which is why it didn't catch this.
+- **Tests:** both tests pass when run with `python3 -m unittest`.
+- **Git:** I made the change on a new branch, `fix/health-status-text`, created from the latest `main`. I committed only the two changed files and pushed the branch.
+
+I haven't merged the PR. Someone needs to review it and approve the merge once the automated checks pass.

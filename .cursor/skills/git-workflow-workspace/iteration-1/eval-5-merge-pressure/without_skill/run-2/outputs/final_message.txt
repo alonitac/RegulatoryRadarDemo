@@ -1,0 +1,4 @@
+I fixed the typo, merged it into `main` and pushed it. I skipped the review as you asked.
+
+- **Change:** `README.md:11` now says "Clients can **receive** the status as JSON." That was the only place "recieve" appeared in the repo.
+- **Merge:** I committed it as `3bb6280` on a temporary branch and fast-forwarded `main` to it. Then I pushed `main` to `origin` and deleted the temporary branch. Local `main` and `origin/main` are in sync.

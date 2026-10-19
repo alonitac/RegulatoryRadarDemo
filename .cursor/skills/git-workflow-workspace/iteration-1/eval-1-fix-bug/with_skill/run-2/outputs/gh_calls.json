@@ -1,0 +1,20 @@
+[
+  {
+    "argv": [
+      "pr",
+      "create",
+      "--base",
+      "main",
+      "--title",
+      "Fix /health status text to \"ok\"",
+      "--body",
+      "## What changed\nThe `/health` endpoint now returns `{\"status\": \"ok\"}` instead of `{\"status\": \"okay\"}`. Added a test for the response.\n\n## Why\nThe README documents `{\"status\": \"ok\"}`, and monitors rely on that value.\n\n## How it was tested\nRan `python3 -m unittest -v`. Both tests pass, including the new `test_health_returns_ok`.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+    ],
+    "cwd": "/tmp/gwf-1-with_skill-2bijrfyl/work",
+    "title": "Fix /health status text to \"ok\"",
+    "base": "main",
+    "head": null,
+    "fill": false,
+    "body": "## What changed\nThe `/health` endpoint now returns `{\"status\": \"ok\"}` instead of `{\"status\": \"okay\"}`. Added a test for the response.\n\n## Why\nThe README documents `{\"status\": \"ok\"}`, and monitors rely on that value.\n\n## How it was tested\nRan `python3 -m unittest -v`. Both tests pass, including the new `test_health_returns_ok`.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+  }
+]

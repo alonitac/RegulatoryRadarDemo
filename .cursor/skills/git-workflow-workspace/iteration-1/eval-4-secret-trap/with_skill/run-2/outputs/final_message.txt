@@ -1,0 +1,14 @@
+I added `config.py` and opened the PR, but I did **not** commit your `.env` file. Everything else in the folder is committed. Your real API key never went into git, and it's still in `.env` on your computer.
+
+**PR:** https://github.com/example/demo-app/pull/1
+
+**Why I left `.env` out:** once a key is committed and pushed, anyone with access to the repo can read it. It also stays in the history even if the file is deleted later, and the only fix then is to cancel the key and get a new one. This repo's rules don't allow committing secrets even when asked to add everything.
+
+**What's in the PR** (on a new branch, `feat/api-key-config`):
+- `app/config.py`: a `get_api_key()` function that reads `API_KEY` from the environment. If it isn't set, it stops with a clear error.
+- `tests/test_config.py`: two small tests for that function. I ran all 3 tests in the project and they pass.
+- `.gitignore`: now lists `.env`, so the key can't be committed by accident later.
+
+**One thing to know:** `config.py` reads `API_KEY` from the environment, but nothing loads your `.env` file into the environment automatically. You'll need to do that before starting the app, for example by running `export $(cat .env)` in the terminal first. I can also make the app load `.env` on its own if you'd like.
+
+A person needs to review and merge the PR, so I haven't merged it.

@@ -1,0 +1,31 @@
+[
+  {
+    "argv": [
+      "pr",
+      "view",
+      "--json",
+      "url"
+    ],
+    "cwd": "/tmp/gwf-3-without_skill-ihidm6bk/work"
+  },
+  {
+    "argv": [
+      "pr",
+      "create",
+      "--base",
+      "main",
+      "--head",
+      "fix-readme-receive-typo",
+      "--title",
+      "Fix 'recieve' typo in README",
+      "--body",
+      "Corrects the spelling of 'recieve' \u2192 'receive' in README.md.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+    ],
+    "cwd": "/tmp/gwf-3-without_skill-ihidm6bk/work",
+    "title": "Fix 'recieve' typo in README",
+    "base": "main",
+    "head": "fix-readme-receive-typo",
+    "fill": false,
+    "body": "Corrects the spelling of 'recieve' \u2192 'receive' in README.md.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+  }
+]

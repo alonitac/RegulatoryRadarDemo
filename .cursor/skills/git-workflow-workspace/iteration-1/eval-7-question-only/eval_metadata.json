@@ -1,0 +1,8 @@
+{
+  "eval_id": 7,
+  "eval_name": "question-only",
+  "prompt": "What does the /health endpoint return right now, and is there a test covering it?",
+  "assertions": [
+    "The repo is untouched: no new branches, commits, pushes, or PR calls"
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "argv": [
+      "pr",
+      "create",
+      "--base",
+      "main",
+      "--title",
+      "Add /version endpoint",
+      "--body",
+      "Adds a `/version` route that returns `{\"version\": APP_VERSION}`, plus a unit test.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+    ],
+    "cwd": "/tmp/gwf-2-without_skill-wqfey2na/work",
+    "title": "Add /version endpoint",
+    "base": "main",
+    "head": null,
+    "fill": false,
+    "body": "Adds a `/version` route that returns `{\"version\": APP_VERSION}`, plus a unit test.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+  }
+]

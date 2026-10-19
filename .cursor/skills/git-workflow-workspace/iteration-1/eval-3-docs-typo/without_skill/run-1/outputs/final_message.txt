@@ -1,0 +1,3 @@
+I changed "recieve" to "receive" in `README.md` (line 11) and opened a pull request for review: https://github.com/example/demo-app/pull/1
+
+The fix is committed on a new branch, `fix-readme-typo`, which I pushed to origin.

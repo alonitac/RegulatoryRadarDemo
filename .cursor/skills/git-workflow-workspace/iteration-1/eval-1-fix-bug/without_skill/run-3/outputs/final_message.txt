@@ -1,0 +1,10 @@
+I fixed it and committed the change on a new branch, `fix/health-status-ok` (commit `c1c3f02`). I haven't pushed it or opened a PR yet.
+
+- **Fix:** `app/main.py:5` now returns `{"status": "ok"}`, which matches the README.
+- **Test:** I added `test_health_returns_ok` in `tests/test_main.py`, which checks the exact response. Both tests pass (`python3 -m unittest`).
+
+If anything is already checking for `"okay"`, such as a monitor, this change will break that check, so it's worth looking before merging.
+
+The README also has a typo on line 11 ("recieve"). I left it alone to keep this change small.
+
+Should I push the branch to `origin` and open a PR?

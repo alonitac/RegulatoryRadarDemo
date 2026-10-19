@@ -1,0 +1,7 @@
+I added the `/version` endpoint and a test, and opened a pull request for review: https://github.com/example/demo-app/pull/1
+
+- **The endpoint:** `/version` returns `{"version": "0.1.0"}`, using `APP_VERSION` from `app/main.py`. When you change that value, the endpoint reports the new version automatically.
+- **The test:** it checks that `/version` exists and returns the current version. I ran the tests and both passed: the existing `/health` check and the new one.
+- **Git steps:** I updated the main branch to the latest version first, then made the change on a new branch called `feat/version-endpoint`. That branch is pushed and the pull request is open.
+
+I haven't merged the pull request. Someone needs to approve it and the automated checks need to pass first.

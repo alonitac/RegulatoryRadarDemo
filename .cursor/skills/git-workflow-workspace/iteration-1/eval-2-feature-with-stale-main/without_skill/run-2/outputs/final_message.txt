@@ -1,0 +1,5 @@
+The `/version` endpoint is added, with a test, and it's up for review as PR #1: https://github.com/example/demo-app/pull/1. Both tests pass.
+
+- **Endpoint:** `app/main.py` now has a `version()` handler that returns `{"version": APP_VERSION}` (currently `"0.1.0"`), registered under `/version` alongside `/health`.
+- **Test:** `tests/test_main.py` checks that `/version` returns the current `APP_VERSION`.
+- **PR:** the change is committed on a new branch, `add-version-endpoint`, which I pushed and opened against `main`.

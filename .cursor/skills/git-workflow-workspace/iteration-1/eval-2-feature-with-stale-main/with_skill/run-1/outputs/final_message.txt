@@ -1,0 +1,7 @@
+The `/version` endpoint is added and sent for review: **https://github.com/example/demo-app/pull/1**
+
+- **The change:** `app/main.py` now has a `/version` route that returns `{"version": "0.1.0"}`. It reads the value from `APP_VERSION`, so the response changes automatically when you change the version.
+- **The test:** `tests/test_main.py` has a new test that checks `/version` exists and returns the current `APP_VERSION`. I ran the tests and both passed.
+- **Git:** First I updated your local copy of main, which was one change behind GitHub (a new `CHANGELOG.md`). Then I made the change on a new branch, `feat/version-endpoint`, saved it there and opened the review request against `main`.
+
+Someone needs to review and merge the PR; I haven't merged it. If reviewers ask for changes, I'll add them to this same PR.

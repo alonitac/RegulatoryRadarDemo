@@ -1,0 +1,10 @@
+## branches on origin
+feat/api-key-config 7dba6c8
+main 30ae187
+
+## graph
+* 7dba6c8 (HEAD -> feat/api-key-config, origin/feat/api-key-config) Add config.py to read API key from API_KEY env var
+* 30ae187 (origin/main, main) Initial commit
+
+## pushes
+0000000000000000000000000000000000000000 7dba6c846f91a43f1cb20bf5717fc779385550ff refs/heads/feat/api-key-config ff=true

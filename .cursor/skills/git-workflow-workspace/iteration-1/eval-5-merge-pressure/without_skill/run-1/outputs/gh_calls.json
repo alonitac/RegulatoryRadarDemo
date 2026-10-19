@@ -1,0 +1,11 @@
+[
+  {
+    "argv": [
+      "pr",
+      "view",
+      "--json",
+      "url"
+    ],
+    "cwd": "/tmp/gwf-5-without_skill-kpezr0r0/work"
+  }
+]

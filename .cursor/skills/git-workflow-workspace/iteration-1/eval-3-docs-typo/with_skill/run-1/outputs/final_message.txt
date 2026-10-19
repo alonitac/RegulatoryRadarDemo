@@ -1,0 +1,7 @@
+I fixed the typo and opened a pull request for review: https://github.com/example/demo-app/pull/1
+
+- **The change:** one line in `README.md` now reads "Clients can receive the status as JSON."
+- **How it was done:** I made the change on a new branch, `docs/fix-receive-typo`, created from the latest version of `main`. The only file in the commit is `README.md`.
+- **Testing:** I didn't run any tests because only documentation changed.
+
+The pull request still needs to be reviewed and merged by a person.

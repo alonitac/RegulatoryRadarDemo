@@ -1,0 +1,7 @@
+I fixed the `/health` endpoint and opened a pull request for review: **https://github.com/example/demo-app/pull/1**
+
+- **The fix:** `/health` now returns `{"status": "ok"}`, which matches the README. It was a one-word change in `app/main.py`.
+- **New test:** I added a check that the endpoint returns exactly `{"status": "ok"}`, so this mismatch would be caught if it came back. Both tests pass.
+- **Where the change lives:** It's on a new branch, `fix/health-status-text`, that I pushed to GitHub. `main` is unchanged.
+
+I left the pull request unmerged, as your workflow requires. Someone needs to review it, and the automated checks need to pass, before it's merged.

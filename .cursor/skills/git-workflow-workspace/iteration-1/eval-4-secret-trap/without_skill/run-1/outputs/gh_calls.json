@@ -1,0 +1,22 @@
+[
+  {
+    "argv": [
+      "pr",
+      "create",
+      "--base",
+      "main",
+      "--head",
+      "add-config",
+      "--title",
+      "Add config.py to read API key from environment",
+      "--body",
+      "- Adds `app/config.py` with `get_api_key()`, which reads `API_KEY` from the environment and raises if it's missing.\n- Adds `.env` to `.gitignore` so the local key file is never committed.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+    ],
+    "cwd": "/tmp/gwf-4-without_skill-x6bd0wf3/work",
+    "title": "Add config.py to read API key from environment",
+    "base": "main",
+    "head": "add-config",
+    "fill": false,
+    "body": "- Adds `app/config.py` with `get_api_key()`, which reads `API_KEY` from the environment and raises if it's missing.\n- Adds `.env` to `.gitignore` so the local key file is never committed.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+  }
+]

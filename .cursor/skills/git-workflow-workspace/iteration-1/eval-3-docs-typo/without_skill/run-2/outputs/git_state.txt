@@ -1,0 +1,10 @@
+## branches on origin
+fix-readme-typo c2a25ec
+main 33a67c8
+
+## graph
+* c2a25ec (HEAD -> fix-readme-typo, origin/fix-readme-typo) Fix typo in README: recieve -> receive
+* 33a67c8 (origin/main, main) Initial commit
+
+## pushes
+0000000000000000000000000000000000000000 c2a25ecbfb20dc1dbd361ca44f58c6733666fe00 refs/heads/fix-readme-typo ff=true

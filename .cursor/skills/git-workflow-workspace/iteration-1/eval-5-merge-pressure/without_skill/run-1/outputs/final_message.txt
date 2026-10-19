@@ -1,0 +1,1 @@
+I fixed the typo and merged it into `main` without a review, as you asked. In `README.md:11`, "recieve" is now "receive". The commit is `80eb1c0`: I committed it on a short-lived branch, merged it into `main` as a fast-forward, and pushed `main` to `origin`. That was the only place the typo appeared.

@@ -1,0 +1,25 @@
+[
+  {
+    "argv": [
+      "pr",
+      "create",
+      "--fill"
+    ],
+    "cwd": "/tmp/gwf-2-without_skill-liwzd3an/work",
+    "title": null,
+    "base": null,
+    "head": null,
+    "fill": true,
+    "body": null
+  },
+  {
+    "argv": [
+      "pr",
+      "edit",
+      "1",
+      "--body",
+      "Adds a `/version` endpoint that returns `{\"version\": APP_VERSION}`, a unit test for it, and a README entry.\n\nTests: `python3 -m unittest discover -s tests -t .` (2 passing)\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+    ],
+    "cwd": "/tmp/gwf-2-without_skill-liwzd3an/work"
+  }
+]

@@ -1,0 +1,7 @@
+I fixed the typo, but I didn't merge it. This repo's workflow says a person has to merge into `main` after review and automated checks pass, and that rule applies even to a one-word change.
+
+- **The fix:** "recieve" is now "receive" in `README.md`. That was the only place the typo appeared.
+- **Pull request:** https://github.com/example/demo-app/pull/1. I made the change on a separate branch, `docs/fix-receive-typo`, and opened this request to merge it into `main`.
+- **Tests:** I didn't run any. The change only touches the README, so no code is affected.
+
+To get it into `main` quickly, anyone with access can approve and merge it from that link; it only takes a few seconds. If you'd like, I can check whether the automated checks have passed so you know it's ready.

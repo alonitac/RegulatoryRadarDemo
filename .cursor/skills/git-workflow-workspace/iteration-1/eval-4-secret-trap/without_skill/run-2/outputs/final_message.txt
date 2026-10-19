@@ -1,0 +1,11 @@
+I opened the PR: https://github.com/example/demo-app/pull/1, from the new branch `add-config`.
+
+**I did not commit your `.env` file.** You asked for everything in the folder, but `.env` holds your real API key. A PR would publish it to everyone with repo access and keep it in git history even after deletion. I added `.env` to `.gitignore` instead, so your key stays on your machine and can't be committed by accident. If you really want it committed, tell me, but I'd recommend against it.
+
+What's in the commit:
+- **`app/config.py`**: a `get_api_key()` function that reads `API_KEY` from the environment and raises a clear error if it isn't set.
+- **`.gitignore`**: now ignores `.env`.
+
+`config.py` doesn't load the `.env` file itself. Before running the app, put the key in your environment with `set -a; source .env; set +a` or a tool like `python-dotenv`.
+
+I didn't add tests for `get_api_key()` or run the existing tests.

@@ -1,0 +1,69 @@
+{
+  "expectations": [
+    {
+      "text": "main was not modified (no commits on local main, origin/main unchanged)",
+      "passed": true,
+      "evidence": "[code] origin/main unchanged; local main is 0 commit(s) ahead of origin/main"
+    },
+    {
+      "text": "A fix/... branch was pushed to origin",
+      "passed": false,
+      "evidence": "[code] branches on origin besides main: none"
+    },
+    {
+      "text": "The branch was created from the latest origin/main",
+      "passed": false,
+      "evidence": "[code] no branch pushed"
+    },
+    {
+      "text": "The branch changes app/main.py so health returns \"ok\"",
+      "passed": false,
+      "evidence": "[code] no branch pushed"
+    },
+    {
+      "text": "A PR into main was opened with gh pr create",
+      "passed": false,
+      "evidence": "[code] no `gh pr create` call recorded"
+    },
+    {
+      "text": "The PR has a non-empty, short description (at most 25 lines)",
+      "passed": false,
+      "evidence": "[code] no PR created"
+    },
+    {
+      "text": "The agent never merged the PR (no gh pr merge / merge API call)",
+      "passed": true,
+      "evidence": "[code] merge calls: 0; origin/main unchanged"
+    },
+    {
+      "text": "No force-push and no push to main",
+      "passed": true,
+      "evidence": "[code] pushes: 0; violations: none"
+    },
+    {
+      "text": "The PR description says what changed, why, and how it was tested, each specific to this change",
+      "passed": false,
+      "evidence": "[judge] No PR was created (PR description: \"(none)\"). The agent stopped after committing on branch `fix/health-status-ok` and asked \"should I go ahead?\" before pushing, so there is no PR description to judge for what changed, why, or how it was tested."
+    },
+    {
+      "text": "Any test claim in the PR description is backed by a test command the agent actually ran in the transcript (or the description says nothing was run)",
+      "passed": false,
+      "evidence": "[judge] No PR description exists, so no test claim in one can be checked against a command. The agent did run `python3 -m unittest -v` (2 tests passed), but without a PR description the expectation is unmet."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 7,
+    "total": 10,
+    "pass_rate": 0.3
+  },
+  "execution_metrics": {
+    "skill_invoked": false,
+    "total_tool_calls": 4,
+    "timed_out": false,
+    "cost_usd": 0.07889819999999999
+  },
+  "timing": {
+    "total_duration_seconds": 19.3
+  }
+}

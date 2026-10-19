@@ -1,0 +1,8 @@
+## branches on origin
+main 3c2a06f
+
+## graph
+* 3c2a06f (HEAD -> main, origin/main) Initial commit
+
+## pushes
+

@@ -1,0 +1,8 @@
+I added the `/version` endpoint and opened a PR for review: https://github.com/example/demo-app/pull/1 (branch `add-version-endpoint`).
+
+**Changes:**
+- **`app/main.py`:** a new `version()` handler returns `{"version": APP_VERSION}`, and it's registered in `ROUTES` as `/version`.
+- **`tests/test_main.py`:** a new test checks that `ROUTES["/version"]()` returns `{"version": APP_VERSION}`. Both tests pass.
+- **`README.md`:** added `/version` to the endpoints list.
+
+I didn't touch an existing mismatch: the README says `/health` returns `{"status": "ok"}`, but the code returns `"okay"`. You might want to fix that separately.

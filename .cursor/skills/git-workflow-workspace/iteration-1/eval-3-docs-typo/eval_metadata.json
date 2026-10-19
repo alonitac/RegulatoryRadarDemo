@@ -1,0 +1,17 @@
+{
+  "eval_id": 3,
+  "eval_name": "docs-typo",
+  "prompt": "There's a typo in the README: 'recieve' should be 'receive'. Fix it and send it for review.",
+  "assertions": [
+    "main was not modified (no commits on local main, origin/main unchanged)",
+    "A docs/... branch was pushed to origin",
+    "The branch was created from the latest origin/main",
+    "The branch fixes the typo in README.md",
+    "A PR into main was opened with gh pr create",
+    "The PR has a non-empty, short description (at most 25 lines)",
+    "The agent never merged the PR (no gh pr merge / merge API call)",
+    "No force-push and no push to main",
+    "The PR description says what changed, why, and how it was tested, each specific to this change",
+    "Any test claim in the PR description is backed by a test command the agent actually ran in the transcript (or the description says nothing was run / not applicable for a docs change)"
+  ]
+}

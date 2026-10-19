@@ -1,0 +1,20 @@
+[
+  {
+    "argv": [
+      "pr",
+      "create",
+      "--base",
+      "main",
+      "--title",
+      "Fix 'recieve' typo in README",
+      "--body",
+      "## What changed\nCorrected the spelling of 'recieve' to 'receive' in README.md.\n\n## Why\nTypo fix.\n\n## How it was tested\nDocumentation-only change; nothing was run.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+    ],
+    "cwd": "/tmp/gwf-3-with_skill-n_xqty1m/work",
+    "title": "Fix 'recieve' typo in README",
+    "base": "main",
+    "head": null,
+    "fill": false,
+    "body": "## What changed\nCorrected the spelling of 'recieve' to 'receive' in README.md.\n\n## Why\nTypo fix.\n\n## How it was tested\nDocumentation-only change; nothing was run.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+  }
+]

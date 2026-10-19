@@ -1,0 +1,9 @@
+## branches on origin
+main 80eb1c0
+
+## graph
+* 80eb1c0 (HEAD -> main, origin/main) Fix 'recieve' typo in README
+* 8e3674f Initial commit
+
+## pushes
+8e3674f16b24ae3299c4ed7eb9ce8a615a39dc41 80eb1c0994a78a49311093f7667c372b31f70b28 refs/heads/main ff=true

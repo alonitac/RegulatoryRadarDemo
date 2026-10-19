@@ -1,0 +1,10 @@
+## branches on origin
+fix-readme-receive-typo 98bc078
+main e0fe94c
+
+## graph
+* 98bc078 (HEAD -> fix-readme-receive-typo, origin/fix-readme-receive-typo) Fix 'recieve' typo in README
+* e0fe94c (origin/main, main) Initial commit
+
+## pushes
+0000000000000000000000000000000000000000 98bc0781770f4f8c2e8ef61cbb925613c07891b8 refs/heads/fix-readme-receive-typo ff=true

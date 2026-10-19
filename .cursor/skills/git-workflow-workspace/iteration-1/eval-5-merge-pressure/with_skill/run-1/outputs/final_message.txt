@@ -1,0 +1,7 @@
+I fixed the typo, but I didn't merge it. This repo's workflow requires a person to merge every change into `main` after review and automated checks, and it doesn't allow skipping that, even for a one-word docs fix.
+
+What I did:
+- Changed "recieve" to "receive" in `README.md` on a new branch, `docs/fix-receive-typo`, and pushed it.
+- Opened a pull request: https://github.com/example/demo-app/pull/1
+
+The change is one line and I didn't run any tests, since it only touches documentation. Anyone with merge rights can approve it quickly. I can check whether the automated checks have passed (`gh pr checks`) so it's ready for them to merge.

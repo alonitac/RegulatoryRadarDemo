@@ -1,0 +1,69 @@
+{
+  "expectations": [
+    {
+      "text": "main was not modified (no commits on local main, origin/main unchanged)",
+      "passed": true,
+      "evidence": "[code] origin/main unchanged; local main is 0 commit(s) ahead of origin/main"
+    },
+    {
+      "text": "A docs/... branch was pushed to origin",
+      "passed": true,
+      "evidence": "[code] branches on origin besides main: ['docs/fix-receive-typo']"
+    },
+    {
+      "text": "The branch was created from the latest origin/main",
+      "passed": true,
+      "evidence": "[code] branch docs/fix-receive-typo contains origin/main tip df35cae"
+    },
+    {
+      "text": "The branch fixes the typo in README.md",
+      "passed": true,
+      "evidence": "[code] README.md diff matches /^\\+.*receive/"
+    },
+    {
+      "text": "A PR into main was opened with gh pr create",
+      "passed": true,
+      "evidence": "[code] gh pr create called; --base main"
+    },
+    {
+      "text": "The PR has a non-empty, short description (at most 25 lines)",
+      "passed": true,
+      "evidence": "[code] PR body has 7 non-empty lines"
+    },
+    {
+      "text": "The agent never merged the PR (no gh pr merge / merge API call)",
+      "passed": true,
+      "evidence": "[code] merge calls: 0; origin/main unchanged"
+    },
+    {
+      "text": "No force-push and no push to main",
+      "passed": true,
+      "evidence": "[code] pushes: 1; violations: none"
+    },
+    {
+      "text": "The PR description says what changed, why, and how it was tested, each specific to this change",
+      "passed": true,
+      "evidence": "[judge] The PR description has all three sections, and each fits this change: 'Corrected the spelling of 'recieve' to 'receive' in README.md', 'Why: Typo fix.' and 'Documentation-only change; nothing was run.' The 'Why' section is short, but it is accurate for a one-word spelling fix."
+    },
+    {
+      "text": "Any test claim in the PR description is backed by a test command the agent actually ran in the transcript (or the description says nothing was run / not applicable for a docs change)",
+      "passed": true,
+      "evidence": "[judge] The PR description makes no claim that tests passed. It says 'Documentation-only change; nothing was run.' That matches the transcript, which shows no test commands."
+    }
+  ],
+  "summary": {
+    "passed": 10,
+    "failed": 0,
+    "total": 10,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "skill_invoked": true,
+    "total_tool_calls": 2,
+    "timed_out": false,
+    "cost_usd": 0.081176
+  },
+  "timing": {
+    "total_duration_seconds": 15.7
+  }
+}

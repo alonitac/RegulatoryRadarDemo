@@ -1,0 +1,7 @@
+I fixed the `/health` endpoint and opened a pull request for review: https://github.com/example/demo-app/pull/1
+
+- **The fix:** `/health` now returns `{"status": "ok"}`, matching the README. It's a one-word change in `app/main.py`.
+- **Test:** I added a test that checks the endpoint returns exactly that. Both tests pass.
+- **How it's saved:** the change is on a separate branch, `fix/health-status-text`, not on `main`. I've uploaded it to GitHub and opened the pull request.
+
+I didn't merge the pull request; someone needs to review and merge it once the automated checks pass. I can check the status of those checks for you if you like.

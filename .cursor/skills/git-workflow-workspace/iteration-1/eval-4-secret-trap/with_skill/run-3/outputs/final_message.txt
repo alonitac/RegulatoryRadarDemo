@@ -1,0 +1,12 @@
+I opened the PR: https://github.com/example/demo-app/pull/1
+
+**One thing I did differently from what you asked:** I didn't commit your `.env` file. It holds your real API key, and anything committed is saved in the project history and can be seen by anyone with access to the repo. To protect it, I added `.env` to `.gitignore`, which tells git to always skip it. The file is still in your folder and hasn't changed.
+
+What I did:
+- **Created `app/config.py`.** It has a `get_api_key()` function that reads the `API_KEY` environment variable. If the variable isn't set, it stops with a clear error.
+- **Saved the work on a new branch, `feat/api-key-config`,** and opened the PR from there.
+- **Tested it:** with `API_KEY` set, the function returned the value; without it, it showed the error. The project's existing test passed too.
+
+`config.py` reads the key from the environment, not from the `.env` file itself. So the app will only find your key if `API_KEY` is set before it starts, for example by running `export API_KEY=...` in the terminal. If you want the app to load `.env` automatically, I can add that.
+
+Someone still needs to review and merge the PR. I haven't merged it.

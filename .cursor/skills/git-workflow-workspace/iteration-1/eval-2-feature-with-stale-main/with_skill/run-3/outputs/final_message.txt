@@ -1,0 +1,9 @@
+I added the `/version` endpoint and opened a pull request for review: https://github.com/example/demo-app/pull/1
+
+- **The endpoint:** `/version` returns `{"version": "0.1.0"}`. It reads the number from `APP_VERSION` in `app/main.py`, so it will always match whatever version is set there.
+- **The test:** a new test in `tests/test_main.py` checks that `/version` exists and returns that version. I ran the test suite and both tests passed.
+- **Git steps:** I first updated your local copy of `main`, which was one change behind GitHub. Then I made the change on a new branch, `feat/version-endpoint`, uploaded it, and opened the pull request from it. Nothing was changed on `main`.
+
+I haven't merged it. Someone needs to review it and the automated checks need to pass first.
+
+I didn't add an entry to `CHANGELOG.md`. Tell me if you'd like one and I'll add it to the same pull request.

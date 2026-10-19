@@ -1,0 +1,12 @@
+## branches on origin
+add-version-endpoint 55fcbf9
+main cfc2ea6
+
+## graph
+* 55fcbf9 (HEAD -> add-version-endpoint, origin/add-version-endpoint) Add /version endpoint returning APP_VERSION
+| * cfc2ea6 (origin/main) Add changelog
+|/  
+* dda6c17 (main) Initial commit
+
+## pushes
+0000000000000000000000000000000000000000 55fcbf9b31e1111d16e126d8c364054c4ed3187c refs/heads/add-version-endpoint ff=true

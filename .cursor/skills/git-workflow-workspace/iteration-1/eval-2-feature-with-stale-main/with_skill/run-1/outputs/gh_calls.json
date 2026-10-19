@@ -1,0 +1,29 @@
+[
+  {
+    "argv": [
+      "pr",
+      "view",
+      "--json",
+      "url"
+    ],
+    "cwd": "/tmp/gwf-2-with_skill-j_daxiyd/work"
+  },
+  {
+    "argv": [
+      "pr",
+      "create",
+      "--base",
+      "main",
+      "--title",
+      "Add /version endpoint",
+      "--body",
+      "## What changed\nAdded a `/version` route that returns `{\"version\": APP_VERSION}`, plus a unit test for it.\n\n## Why\nLets callers check which version of the app is running.\n\n## How it was tested\nRan `python3 -m unittest -v`: 2 tests, both passed.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+    ],
+    "cwd": "/tmp/gwf-2-with_skill-j_daxiyd/work",
+    "title": "Add /version endpoint",
+    "base": "main",
+    "head": null,
+    "fill": false,
+    "body": "## What changed\nAdded a `/version` route that returns `{\"version\": APP_VERSION}`, plus a unit test for it.\n\n## Why\nLets callers check which version of the app is running.\n\n## How it was tested\nRan `python3 -m unittest -v`: 2 tests, both passed.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+  }
+]

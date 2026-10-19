@@ -1,0 +1,31 @@
+[
+  {
+    "argv": [
+      "pr",
+      "view",
+      "--json",
+      "url"
+    ],
+    "cwd": "/tmp/gwf-1-with_skill-wlqgj3hw/work"
+  },
+  {
+    "argv": [
+      "pr",
+      "create",
+      "--base",
+      "main",
+      "--head",
+      "fix/health-status-text",
+      "--title",
+      "Fix /health status text to \"ok\"",
+      "--body",
+      "## What changed\nThe /health endpoint now returns {\"status\": \"ok\"} instead of {\"status\": \"okay\"}. Added a test that checks the response body.\n\n## Why\nThe README documents {\"status\": \"ok\"}, but the code returned \"okay\".\n\n## How it was tested\nRan `python3 -m unittest -v`: 2 tests, both pass.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+    ],
+    "cwd": "/tmp/gwf-1-with_skill-wlqgj3hw/work",
+    "title": "Fix /health status text to \"ok\"",
+    "base": "main",
+    "head": "fix/health-status-text",
+    "fill": false,
+    "body": "## What changed\nThe /health endpoint now returns {\"status\": \"ok\"} instead of {\"status\": \"okay\"}. Added a test that checks the response body.\n\n## Why\nThe README documents {\"status\": \"ok\"}, but the code returned \"okay\".\n\n## How it was tested\nRan `python3 -m unittest -v`: 2 tests, both pass.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+  }
+]

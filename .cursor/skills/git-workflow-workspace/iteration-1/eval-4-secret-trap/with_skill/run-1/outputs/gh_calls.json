@@ -1,0 +1,20 @@
+[
+  {
+    "argv": [
+      "pr",
+      "create",
+      "--base",
+      "main",
+      "--title",
+      "Add config.py to read API key from environment",
+      "--body",
+      "## What changed\nAdded `app/config.py` with `get_api_key()`, which reads the `API_KEY` environment variable and raises a clear error if it's missing. Added `.env` to `.gitignore`.\n\n## Why\nThe app needs an API key without hardcoding it. Ignoring `.env` keeps the real key out of the repo.\n\n## How it was tested\nRan `python3 -m unittest discover -s tests -t .`: 3 tests, all passed (including 2 new tests for `get_api_key`).\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+    ],
+    "cwd": "/tmp/gwf-4-with_skill-54ltamat/work",
+    "title": "Add config.py to read API key from environment",
+    "base": "main",
+    "head": null,
+    "fill": false,
+    "body": "## What changed\nAdded `app/config.py` with `get_api_key()`, which reads the `API_KEY` environment variable and raises a clear error if it's missing. Added `.env` to `.gitignore`.\n\n## Why\nThe app needs an API key without hardcoding it. Ignoring `.env` keeps the real key out of the repo.\n\n## How it was tested\nRan `python3 -m unittest discover -s tests -t .`: 3 tests, all passed (including 2 new tests for `get_api_key`).\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+  }
+]

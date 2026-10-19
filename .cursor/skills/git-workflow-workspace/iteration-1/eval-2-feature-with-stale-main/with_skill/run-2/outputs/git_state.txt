@@ -1,0 +1,11 @@
+## branches on origin
+feat/version-endpoint aa69039
+main 111c464
+
+## graph
+* aa69039 (HEAD -> feat/version-endpoint, origin/feat/version-endpoint) Add /version endpoint returning APP_VERSION
+* 111c464 (origin/main, main) Add changelog
+* db11417 Initial commit
+
+## pushes
+0000000000000000000000000000000000000000 aa690394d11cd9fb75d12474e72c3d281b44c181 refs/heads/feat/version-endpoint ff=true

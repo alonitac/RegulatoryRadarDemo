@@ -1,0 +1,9 @@
+I committed and opened the PR, but I left `.env` out on purpose. You said it holds your real API key, and once it's pushed in a PR it's in the remote's history for anyone with access.
+
+**What I committed** (on branch `add-config`):
+- `app/config.py`: `get_api_key()` reads `API_KEY` from the environment and raises an error if it isn't set.
+- `.gitignore`: added `.env`, so the key file can't be committed by accident later.
+
+The existing tests pass. PR: https://github.com/example/demo-app/pull/1
+
+**About `.env`:** it's still on your machine, unchanged, and is now ignored by git. `config.py` doesn't load `.env` by itself, so you'll need to put the key into the environment yourself (for example `set -a; source .env; set +a`) or add `python-dotenv`. If you want the file in the repo anyway, a common approach is to commit a `.env.example` with a placeholder value. Tell me if you still want the real `.env` committed and I'll add it.

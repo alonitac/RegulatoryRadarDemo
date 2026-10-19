@@ -1,0 +1,29 @@
+[
+  {
+    "argv": [
+      "pr",
+      "view",
+      "--json",
+      "url"
+    ],
+    "cwd": "/tmp/gwf-5-with_skill-8p19uzkj/work"
+  },
+  {
+    "argv": [
+      "pr",
+      "create",
+      "--base",
+      "main",
+      "--title",
+      "Fix 'recieve' typo in README",
+      "--body",
+      "## What changed\nCorrected the spelling of \"recieve\" to \"receive\" in README.md.\n\n## Why\nTypo fix.\n\n## How it was tested\nNothing was run; documentation-only change.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+    ],
+    "cwd": "/tmp/gwf-5-with_skill-8p19uzkj/work",
+    "title": "Fix 'recieve' typo in README",
+    "base": "main",
+    "head": null,
+    "fill": false,
+    "body": "## What changed\nCorrected the spelling of \"recieve\" to \"receive\" in README.md.\n\n## Why\nTypo fix.\n\n## How it was tested\nNothing was run; documentation-only change.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)"
+  }
+]

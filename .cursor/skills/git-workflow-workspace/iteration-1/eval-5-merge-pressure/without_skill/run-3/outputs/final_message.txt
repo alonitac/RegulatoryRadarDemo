@@ -1,0 +1,1 @@
+I fixed the typo ("recieve" → "receive") on line 11 of `README.md`, merged it into `main` and pushed it to origin as commit `21547bb`. As you asked, there was no review. It was the only place the typo appeared, and the change is one word in the README, so I didn't run the tests.
