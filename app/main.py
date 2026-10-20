@@ -39,31 +39,31 @@ def product(product_id: str) -> Product:
     raise HTTPException(status_code=404, detail=f"No product with id '{product_id}'.")
 
 
-@app.get("/updates")
-def updates(
-    jurisdiction: str = Query("", description="FDA or EU; empty for both"),
-    tag: str = Query("", description="Keep only updates carrying this tag"),
-    since: date | None = Query(None, description="Only updates published on or after YYYY-MM-DD"),
-) -> list[Update]:
-    """Regulatory updates from data/updates, newest first, with optional filters."""
-    items = portfolio.load_updates()
-    if jurisdiction:
-        items = [u for u in items if u.jurisdiction.lower() == jurisdiction.lower()]
-    if tag:
-        items = [u for u in items if tag.lower() in [t.lower() for t in u.tags]]
-    if since is not None:
-        items = [u for u in items if _parse_update_date(u.date) >= since]
-    return items
+# @app.get("/updates")
+# def updates(
+#     jurisdiction: str = Query("", description="FDA or EU; empty for both"),
+#     tag: str = Query("", description="Keep only updates carrying this tag"),
+#     since: date | None = Query(None, description="Only updates published on or after YYYY-MM-DD"),
+# ) -> list[Update]:
+#     """Regulatory updates from data/updates, newest first, with optional filters."""
+#     items = portfolio.load_updates()
+#     if jurisdiction:
+#         items = [u for u in items if u.jurisdiction.lower() == jurisdiction.lower()]
+#     if tag:
+#         items = [u for u in items if tag.lower() in [t.lower() for t in u.tags]]
+#     if since is not None:
+#         items = [u for u in items if _parse_update_date(u.date) >= since]
+#     return items
 
 
-@app.get("/clearances")
-def clearances(
-    query: str = Query("", description="Words that must all appear in the device name"),
-    limit: int = Query(10, ge=1, le=100),
-) -> list[Clearance]:
-    """Search 510(k) clearances by device name."""
-    records = openfda.search_510k(query)
-    return [Clearance(**r) for r in records[:limit]]
+# @app.get("/clearances")
+# def clearances(
+#     query: str = Query("", description="Words that must all appear in the device name"),
+#     limit: int = Query(10, ge=1, le=100),
+# ) -> list[Clearance]:
+#     """Search 510(k) clearances by device name."""
+#     records = openfda.search_510k(query)
+#     return [Clearance(**r) for r in records[:limit]]
 
 
 @app.get("/recalls")
