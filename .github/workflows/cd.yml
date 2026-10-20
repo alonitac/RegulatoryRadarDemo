@@ -15,7 +15,7 @@ jobs:
     name: Deploy to Windows Server
     runs-on: ubuntu-latest
     env:
-      SERVER_HOST: ${{ vars.SERVER_HOST }}
+      SERVER_HOST: ${{ secrets.SERVER_HOST }}
     steps:
       - name: Check out code
         uses: actions/checkout@v4
@@ -26,7 +26,7 @@ jobs:
         run: |
           set -euo pipefail
           if [ -z "${SERVER_HOST}" ]; then
-            echo "SERVER_HOST is empty. Add it as a repository variable."
+            echo "SERVER_HOST is empty. Add it as a repository secret."
             exit 1
           fi
           if [ -z "${SERVER_SSH_KEY}" ]; then
