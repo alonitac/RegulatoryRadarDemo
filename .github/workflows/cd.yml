@@ -1,0 +1,63 @@
+name: CD
+
+# Deploys the app to the Windows Server on every push to main.
+# You can also run it by hand from the Actions tab.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy to Windows Server
+    runs-on: ubuntu-latest
+    env:
+      SERVER_HOST: ${{ vars.SERVER_HOST }}
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up the SSH key
+        env:
+          SERVER_SSH_KEY: ${{ secrets.SERVER_SSH_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${SERVER_HOST}" ]; then
+            echo "SERVER_HOST is empty. Add it as a repository variable."
+            exit 1
+          fi
+          if [ -z "${SERVER_SSH_KEY}" ]; then
+            echo "SERVER_SSH_KEY is empty. Add it as a repository secret."
+            exit 1
+          fi
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SERVER_SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H "$SERVER_HOST" >> ~/.ssh/known_hosts
+
+      - name: Copy the code and the deploy script
+        run: |
+          set -euo pipefail
+          ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=yes -o ConnectTimeout=20 -o ServerAliveInterval=30 \
+            "Administrator@${SERVER_HOST}" \
+            'if (Test-Path -LiteralPath C:\deploy\incoming) { Remove-Item -LiteralPath C:\deploy\incoming -Recurse -Force }; New-Item -ItemType Directory -Force -Path C:\deploy\incoming | Out-Null'
+          scp -i ~/.ssh/deploy_key -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=yes -o ConnectTimeout=20 -r \
+            app data requirements.txt scripts \
+            "Administrator@${SERVER_HOST}:C:/deploy/incoming/"
+
+      - name: Run the deploy script
+        run: |
+          set -euo pipefail
+          ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=yes -o ConnectTimeout=20 -o ServerAliveInterval=30 \
+            "Administrator@${SERVER_HOST}" \
+            'powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\deploy\incoming\scripts\deploy.ps1 -Source C:\deploy\incoming'
+
+      - name: Check the health page
+        run: |
+          set -euo pipefail
+          curl --fail --show-error --silent --retry 12 --retry-delay 5 --retry-all-errors --max-time 20 \
+            "http://${SERVER_HOST}/health"
+          echo
